@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Metacritic Bias Analyzer
+Metacritic Bias Analyzer - Version Playwright
 - Charge un fichier de liens Metacritic
-- Scrape ou met à jour une base CSV locale
+- Scrape ou met à jour une base CSV locale (avec scrolling dynamique)
 - Calcule les biais des outlets vs Metascore et vs UserScore
 
 NOTES:
-- Le script nécessite "requests" et "beautifulsoup4".
+- Le script nécessite "playwright" et "beautifulsoup4".
+- Installation : pip install playwright beautifulsoup4
+- Puis : playwright install chromium
 - La base est un fichier CSV nommé "metacritic_db.csv".
 - Les UserScores (sur 10) sont convertis *10 pour homogénéité.
 - Les doublons sont mis à jour, jamais dupliqués.
@@ -17,12 +19,11 @@ import csv
 import os
 import statistics as stats
 from bs4 import BeautifulSoup
-import requests
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 import time
 
 SCRAPE_DELAY = 3
 MAX_RETRIES = 3
-RETRY_DELAY = 3
 
 DB_FILE = "metacritic_db.csv"
 
@@ -51,7 +52,7 @@ def save_db(rows):
 
 
 # ------------------------------------------------------------
-# Scraping Metacritic
+# Scraping Metacritic avec Playwright
 # ------------------------------------------------------------
 def clean_link(url: str) -> str:
     """Nettoie un lien Metacritic jusqu'au nom du jeu."""
@@ -65,33 +66,65 @@ def clean_link(url: str) -> str:
     return base
 
 
-def fetch_with_retry(url: str, headers: dict, max_retries: int = MAX_RETRIES) -> str:
-    """Récupère une URL avec retry en cas d'échec."""
-    for attempt in range(max_retries):
-        try:
-            response = requests.get(url, headers=headers, timeout=10)
-            response.raise_for_status()
-            return response.text
-        except requests.RequestException as e:
-            print(f"  Tentative {attempt + 1}/{max_retries} échouée: {e}")
-            if attempt < max_retries - 1:
-                time.sleep(RETRY_DELAY)
-            else:
-                print(f"  Échec après {max_retries} tentatives.")
-                return None
+def fetch_page_with_playwright(url: str, scroll: bool = False):
+    """
+    Récupère une page avec Playwright.
+    Si scroll=True, scrolle jusqu'à charger tout le contenu dynamique.
+    """
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
+            page = context.new_page()
+
+            # Charger la page
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(2000)  # Attendre le rendu initial
+
+            if scroll:
+                print(f"  Scrolling automatique en cours...")
+                previous_count = 0
+                no_change_count = 0
+                max_no_change = 3  # Arrêter après 3 scrolls sans changement
+
+                while no_change_count < max_no_change:
+                    # Scroll jusqu'en bas
+                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    page.wait_for_timeout(2000)  # Attendre le chargement
+
+                    # Compter les reviews
+                    current_count = page.locator('div[data-testid="product-review"]').count()
+
+                    if current_count > previous_count:
+                        print(f"    → {current_count} reviews chargées")
+                        previous_count = current_count
+                        no_change_count = 0
+                    else:
+                        no_change_count += 1
+
+                print(f"  ✓ Scrolling terminé : {previous_count} reviews trouvées")
+
+            html = page.content()
+            browser.close()
+            return html
+
+    except PlaywrightTimeoutError:
+        print(f"  ⚠ Timeout lors du chargement de {url}")
+        return None
+    except Exception as e:
+        print(f"  ⚠ Erreur Playwright : {e}")
+        return None
 
 
 def scrape_metacritic_game(url: str):
     """Scrape la page Metacritic principale + critic-reviews."""
     cleaned = clean_link(url)
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "en-US,en;q=0.9"
-    }
 
     # Page principale pour Metascore et User Score
     print(f"  Récupération de {cleaned}...")
-    html_main = fetch_with_retry(cleaned, headers)
+    html_main = fetch_page_with_playwright(cleaned, scroll=False)
     if not html_main:
         return []
 
@@ -101,7 +134,7 @@ def scrape_metacritic_game(url: str):
     metascore = None
     review_count_outlets = None
 
-    # Méthode 1 : via le lien critic-path
+    # Méthode : via le lien critic-path
     critic_link = soup_main.find("a", attrs={"data-testid": "critic-path"})
     if critic_link:
         # Nombre de reviews
@@ -153,12 +186,13 @@ def scrape_metacritic_game(url: str):
                         except ValueError:
                             pass
 
-    print(f"  Metascore: {metascore}, User Score: {user_score}, Reviews: {review_count_outlets} critics / {review_count_users} users")
+    print(
+        f"  Metascore: {metascore}, User Score: {user_score}, Reviews: {review_count_outlets} critics / {review_count_users} users")
 
-    # Scrape critic-reviews page
+    # Scrape critic-reviews page AVEC SCROLLING
     critic_url = cleaned.rstrip("/") + "/critic-reviews/"
     print(f"  Récupération des reviews: {critic_url}...")
-    html_crit = fetch_with_retry(critic_url, headers)
+    html_crit = fetch_page_with_playwright(critic_url, scroll=True)
     if not html_crit:
         return []
 
@@ -400,12 +434,11 @@ def compute_stats():
 # ------------------------------------------------------------
 def main():
     print("\n" + "=" * 60)
-    print("    METACRITIC BIAS ANALYZER")
+    print("    METACRITIC BIAS ANALYZER (Playwright)")
     print("=" * 60)
     print("\n1 = Charger fichier de liens / scraper / mettre à jour base")
     print("2 = Afficher statistiques par outlet")
-    print("3 = Tester le parsing sur un fichier HTML local")
-    print("4 = Quitter")
+    print("3 = Quitter")
     choice = input("\nVotre choix : ").strip()
 
     if choice == "1":
@@ -417,53 +450,9 @@ def main():
     elif choice == "2":
         compute_stats()
     elif choice == "3":
-        test_html_parsing()
-    elif choice == "4":
         print("Au revoir !")
     else:
         print("❌ Choix invalide.")
-
-
-def test_html_parsing():
-    """Test le parsing sur un fichier HTML local."""
-    path = input("\nChemin du fichier HTML à tester : ").strip()
-    if not os.path.exists(path):
-        print(f"❌ Fichier introuvable : {path}")
-        return
-
-    with open(path, 'r', encoding='utf-8') as f:
-        html = f.read()
-
-    soup = BeautifulSoup(html, "html.parser")
-
-    print("\n" + "=" * 60)
-    print("TEST DE PARSING HTML")
-    print("=" * 60)
-
-    # Test extraction reviews
-    reviews = soup.find_all("div", attrs={"data-testid": "product-review"})
-    print(f"\n✓ {len(reviews)} reviews trouvées\n")
-
-    for i, review_block in enumerate(reviews[:5], 1):  # Affiche les 5 premières
-        outlet_link = review_block.find("a", class_="c-siteReviewHeader_publicationName")
-        if outlet_link:
-            outlet_name = outlet_link.get_text(strip=True)
-            href = outlet_link.get("href", "")
-            outlet_id = href.split("/publication/")[-1].strip("/") if "/publication/" in href else "N/A"
-
-            score_div = review_block.find("div", class_="c-siteReviewScore")
-            if score_div:
-                score_span = score_div.find("span", attrs={"data-v-e408cafe": ""})
-                score = score_span.get_text(strip=True) if score_span else "N/A"
-            else:
-                score = "N/A"
-
-            print(f"{i}. {outlet_name}")
-            print(f"   ID: {outlet_id}")
-            print(f"   Score: {score}\n")
-
-    if len(reviews) > 5:
-        print(f"... et {len(reviews) - 5} autre(s) review(s)\n")
 
 
 if __name__ == "__main__":
