@@ -390,6 +390,19 @@ def compute_stats():
     print(f"{'':30} | {'Rev':<4} | {'Moy':>9} | {'Méd':>9} | {'Moy':>9} | {'Méd':>9} |")
     print("-" * 120)
 
+    # Calcul du seuil du 90e centile AVANT l'affichage
+    user_means_for_threshold = [r['user_mean'] for r in table_data if r['user_mean'] is not None]
+    threshold_90 = None
+    if user_means_for_threshold:
+        user_means_abs = sorted([abs(x) for x in user_means_for_threshold], reverse=True)
+        percentile_90_idx = int(len(user_means_abs) * 0.1)
+        threshold_90 = user_means_abs[percentile_90_idx] if percentile_90_idx < len(user_means_abs) else user_means_abs[
+            -1]
+
+    # Codes ANSI pour couleur rouge
+    RED = '\033[91m'
+    RESET = '\033[0m'
+
     for row in table_data:
         outlet = row["outlet"][:29]  # Tronque si trop long
         nb = row["nb_reviews"]
@@ -397,7 +410,12 @@ def compute_stats():
         meta_med = f"{row['meta_median']:+.2f}"
 
         if row["user_mean"] is not None:
-            user_m = f"{row['user_mean']:+.2f}"
+            user_m_val = row['user_mean']
+            # Colorer en rouge si dans le 90e centile
+            if threshold_90 and abs(user_m_val) >= threshold_90:
+                user_m = f"{' '*3}{RED}{user_m_val:+.2f}{RESET}"
+            else:
+                user_m = f"{user_m_val:+.2f}"
             user_med = f"{row['user_median']:+.2f}"
         else:
             user_m = "N/A"
@@ -427,6 +445,43 @@ def compute_stats():
     print(f"\nTotal outlets: {len(table_data)} | Total reviews analysées: {sum(r['nb_reviews'] for r in table_data)}")
     print("\nLégende: Biais positif = outlet note plus haut | Biais négatif = outlet note plus bas")
     print("=" * 120)
+
+    # Calcul du 90e centile pour le biais vs Joueurs
+    if all_user_means:
+        # Trier les biais (valeurs absolues pour trouver les plus extrêmes)
+        user_means_abs = sorted([abs(x) for x in all_user_means], reverse=True)
+        percentile_90_idx = int(len(user_means_abs) * 0.1)  # Top 10%
+        threshold_90 = user_means_abs[percentile_90_idx] if percentile_90_idx < len(user_means_abs) else user_means_abs[
+            -1]
+
+        # Filtrer les outlets dans le 90e centile
+        top_10_biased = [
+            row for row in table_data
+            if row['user_mean'] is not None and row["nb_reviews"] > 20 and abs(row['user_mean']) >= threshold_90
+        ]
+
+        # Trier par biais absolu décroissant
+        top_10_biased.sort(key=lambda x: abs(x['user_mean']), reverse=True)
+
+        if top_10_biased:
+            print("\n" + "=" * 120)
+            print("OUTLETS DANS LE 90e CENTILE - BIAIS VS JOUEURS (Top 10% les plus biaisés, avec plus de 20 reviews)")
+            print("=" * 120)
+            print(f"{'Outlet':<30} | {'Nbr':<4} | {'Biais Moy vs Joueurs':>21} | {'Type de biais':<15} |")
+            print(f"{'':30} | {'Rev':<4} | {'':>21} | {'':^15} |")
+            print("-" * 120)
+
+            for row in top_10_biased:
+                outlet = row["outlet"][:29]
+                nb = row["nb_reviews"]
+                user_m = row['user_mean']
+                bias_type = "Plus généreux" if user_m > 0 else "Plus sévère"
+
+                print(f"{outlet:<30} | {nb:<4} | {user_m:>+21.2f} | {bias_type:<15} |")
+
+            print("=" * 120)
+            print(f"Seuil du 90e centile : {threshold_90:.2f} points de différence")
+            print("=" * 120)
 
 
 # ------------------------------------------------------------
