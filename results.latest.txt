@@ -1,597 +1,620 @@
-========================================================================================================================
-                                                   GLOBAL STATISTICS
-------------------------------------------------------------------------------------------------------------------------
-Average outlet bias vs PRO      : +0.08 (std: 4.38)
-Average outlet bias vs PLAYERS  : +12.58 (std: 9.27)
+============================================================
+    METACRITIC BIAS ANALYZER (Playwright) v3
+============================================================
 
-Total outlets: 535 | Total reviews analyzed: 15432
+1 = Load links file / scrape / update database
+2 = Show statistics per outlet
+3 = Quit
 
-Legend: Positive bias = outlet rates higher | Negative bias = outlet rates lower
-========================================================================================================================
+Your choice: 2
 
 ========================================================================================================================
-TOP 10% MOST BIASED OUTLETS - VS PLAYERS (min 20 reviews)
-=================================================================================
-Outlet                         | Nbr  |   Avg Bias vs Players | Bias Type       |
-                               | Rev  |                       |                 |
----------------------------------------------------------------------------------
-Forbes                         | 29   |                +37.83 | More generous   |
-Digital Chumps                 | 85   |                +29.27 | More generous   |
-The Games Machine              | 107  |                +28.34 | More generous   |
-Hobby Consolas                 | 97   |                +27.61 | More generous   |
-Atomix                         | 70   |                +27.60 | More generous   |
-Impulsegamer                   | 107  |                +27.57 | More generous   |
-God is a Geek                  | 106  |                +27.26 | More generous   |
-PSX Brasil                     | 43   |                +27.07 | More generous   |
-PlayStation LifeStyle          | 59   |                +26.78 | More generous   |
-LevelUp                        | 58   |                +26.66 | More generous   |
-Ragequit.gr                    | 28   |                +26.50 | More generous   |
-MeuPlayStation                 | 37   |                +26.24 | More generous   |
-Daily Star                     | 34   |                +25.97 | More generous   |
-TierraGamer                    | 45   |                +25.76 | More generous   |
-Gamersky                       | 62   |                +25.73 | More generous   |
-Jeuxvideo.com                  | 122  |                +25.67 | More generous   |
-Player 2                       | 39   |                +25.62 | More generous   |
-GAMES.CH                       | 56   |                +25.59 | More generous   |
-LaPS4                          | 34   |                +25.53 | More generous   |
-App Trigger                    | 27   |                +25.48 | More generous   |
-Areajugones                    | 65   |                +25.46 | More generous   |
-Voxel                          | 21   |                +25.38 | More generous   |
-GameSpace                      | 34   |                +24.97 | More generous   |
-TrueGaming                     | 28   |                +24.96 | More generous   |
-Playstation Official Magazine  | 46   |                +24.76 | More generous   |
-Hooked Gamers                  | 31   |                +24.58 | More generous   |
-Wccftech                       | 69   |                +24.52 | More generous   |
-Twinfinite                     | 85   |                +24.47 | More generous   |
-Attack of the Fanboy           | 46   |                +24.22 | More generous   |
-IGN Italia                     | 124  |                +24.17 | More generous   |
-VG247                          | 38   |                +24.00 | More generous   |
-Windows Central                | 32   |                +23.97 | More generous   |
-Softpedia                      | 57   |                +23.89 | More generous   |
----------------------------------------------------------------------------------
-
-90th percentile threshold : 23.89 points difference
+GLOBAL SUMMARY [vs PLAYERS]
 ========================================================================================================================
+Average outlet |Bias| vs PLAYERS: +15.84
+Median outlet |Bias| vs PLAYERS: +11.50
+Total outlets: 535
+Total reviews: 15432
+
+========================================================================================================================
+EXTREMENESS (avg |Bias|) - Top 20 [vs PLAYERS]
+========================================================================================================================
+Outlet                         | |x|Avg | |x|Med |     SD
+------------------------------------------------------------
+Forbes                         |  38.24 |  38.00 |  27.55
+Comicbook.com                  |  35.14 |  49.00 |  27.93
+PlayGround.ru                  |  30.87 |  35.00 |  21.69
+MGG Spain                      |  29.62 |  15.00 |  30.75
+Digital Chumps                 |  29.46 |  26.00 |  21.54
+Launcher (The Washington Post) |  29.17 |  26.00 |  18.36
+The Games Machine              |  28.51 |  21.50 |  22.30
+Impulsegamer                   |  28.07 |  22.00 |  21.15
+Radio Times                    |  28.00 |  18.00 |  22.37
+Atomix                         |  27.94 |  23.00 |  20.51
+GIGA                           |  27.88 |  25.00 |  21.19
+Hobby Consolas                 |  27.84 |  20.00 |  21.18
+Shindig                        |  27.83 |  21.00 |  28.01
+GINX TV                        |  27.55 |  22.00 |  16.95
+God is a Geek                  |  27.51 |  22.50 |  19.28
+TouchArcade                    |  27.50 |  16.00 |  24.01
+The Mako Reactor               |  27.44 |  26.00 |  15.76
+PlayStation LifeStyle          |  27.42 |  19.00 |  22.15
+PSX Brasil                     |  27.07 |  23.50 |  17.10
+Try Hard Guides                |  26.94 |  26.00 |  16.86
+> 'Forbes' has the biggest gap from player scores: their reviews differ by 38.2 points on average. Half their reviews are within 38.0 points of players, half are further away. Their consistency varies with a standard deviation of 27.6.
+
+========================================================================================================================
+VOLATILITY (bias SD) - Top 20 [vs PLAYERS]
+========================================================================================================================
+Outlet                         |     SD
+----------------------------------------
+Kill Screen                    |  33.60
+Nintendo Gamer                 |  31.97
+MGG Spain                      |  30.75
+Shindig                        |  28.01
+Comicbook.com                  |  27.93
+Forbes                         |  27.55
+Quarter to Three               |  26.63
+New Game Network               |  24.84
+New York Daily News            |  24.47
+Variety                        |  24.35
+M3                             |  24.18
+GameSpace                      |  24.13
+Screen Rant                    |  24.09
+TouchArcade                    |  24.01
+Playstation Official Magazine  |  23.96
+TheGamer                       |  23.95
+Detroit Free Press             |  23.77
+Trusted Reviews                |  23.61
+We Got This Covered            |  23.57
+4Players.de                    |  23.54
+> 'Kill Screen' is the most inconsistent compared to players: their score differences vary widely, with a standard deviation of 33.6 points.
 
 ========================================================================================================================
 BIAS STATISTICS PER OUTLET
----------------------------------------------------------------------------------------
-Outlet                         | Nbr  |      Bias vs PRO      |    Bias vs Players    |
-                               | Rev  |      Mean |       Med |      Mean |       Med |
----------------------------------------------------------------------------------------
-IGN                            | 256  |     +0.32 |     +1.00 |    +13.33 |    +10.00 |
-GameSpot                       | 214  |     -2.64 |     -2.00 |    +10.71 |     +6.00 |
-Multiplayer.it                 | 181  |     +2.85 |     +1.00 |    +21.46 |    +14.00 |
-Game Informer                  | 180  |     +3.04 |     +3.00 |    +18.16 |    +12.00 |
-Everyeye.it                    | 165  |     +3.02 |     +3.00 |    +22.65 |    +17.00 |
-Vandal                         | 154  |     +3.64 |     +3.00 |    +21.79 |    +15.00 |
-GamingTrend                    | 142  |     +3.39 |     +3.00 |    +19.07 |    +11.00 |
-SpazioGames                    | 139  |     +2.15 |     +1.00 |    +20.53 |    +15.00 |
-GamesRadar+                    | 138  |     -1.65 |     +0.00 |    +14.52 |    +12.00 |
-Metro GameCentral              | 134  |     -7.81 |     -6.00 |     +9.28 |     +5.00 |
-Hardcore Gamer                 | 133  |     +0.26 |     +0.00 |    +20.69 |    +14.00 |
-Worth Playing                  | 131  |     +0.34 |     +1.00 |    +14.61 |    +10.00 |
-COGconnected                   | 128  |     +3.42 |     +3.00 |    +23.28 |    +17.00 |
-Edge Magazine                  | 127  |     -6.13 |     -5.00 |     +7.24 |     +5.00 |
-IGN Italia                     | 124  |     +3.05 |     +2.00 |    +24.17 |    +17.00 |
-Jeuxvideo.com                  | 122  |     +1.71 |     +1.00 |    +25.67 |    +21.50 |
-Eurogamer                      | 120  |     -6.79 |     -4.50 |     +4.94 |     +5.00 |
-Gaming Age                     | 115  |     +1.21 |     +4.00 |    +16.33 |    +13.00 |
-Meristation                    | 114  |     +2.35 |     +3.00 |    +21.58 |    +14.50 |
-Destructoid                    | 111  |     -1.24 |     +0.00 |    +14.48 |    +10.00 |
-Gameblog.fr                    | 109  |     -2.19 |     -2.00 |    +17.64 |    +11.00 |
-Games.cz                       | 108  |     -4.06 |     -3.50 |    +14.87 |    +12.00 |
-TheSixthAxis                   | 108  |     -1.52 |     +0.50 |    +18.59 |    +14.00 |
-Impulsegamer                   | 107  |     +5.93 |     +5.00 |    +27.57 |    +22.00 |
-The Games Machine              | 107  |     +5.54 |     +4.00 |    +28.34 |    +21.50 |
-Game Revolution                | 107  |     -3.21 |     -3.00 |     +9.78 |     +7.00 |
-God is a Geek                  | 106  |     +6.24 |     +6.00 |    +27.26 |    +22.50 |
-Gaming Nexus                   | 105  |     +2.35 |     +2.00 |    +18.28 |    +13.00 |
-Cheat Code Central             | 104  |     +2.46 |     +2.00 |    +12.94 |    +10.50 |
-CD-Action                      | 103  |     -2.32 |     +0.00 |    +16.53 |    +11.00 |
-PC Gamer                       | 100  |     +0.71 |     +1.00 |    +15.85 |    +11.00 |
-GameOver.gr                    | 100  |     -1.31 |     -1.50 |    +18.68 |    +14.00 |
-Hobby Consolas                 | 97   |     +6.69 |     +6.00 |    +27.61 |    +20.00 |
-CGMagazine                     | 95   |     +2.14 |     +2.00 |    +20.45 |    +17.00 |
-Shacknews                      | 93   |     -0.45 |     -1.00 |    +21.23 |    +18.00 |
-Gamer.nl                       | 93   |     -2.19 |     -2.00 |    +17.47 |    +11.00 |
-Push Square                    | 90   |     -2.42 |     -2.00 |    +22.26 |    +15.50 |
-GameCritics                    | 89   |     -7.65 |     -7.00 |     +4.27 |     +3.50 |
-GRYOnline.pl                   | 86   |     -1.28 |     +0.00 |    +18.86 |    +14.00 |
-Digital Chumps                 | 85   |     +7.15 |     +7.00 |    +29.27 |    +26.00 |
-Twinfinite                     | 85   |     +1.00 |     +1.00 |    +24.47 |    +19.00 |
-DualShockers                   | 84   |     +0.24 |     +2.00 |    +20.76 |    +18.00 |
-Gamer.no                       | 84   |     -4.62 |     -3.00 |    +14.40 |    +11.50 |
-GamingBolt                     | 80   |     -0.23 |     +1.00 |    +20.04 |    +14.50 |
-GameStar                       | 79   |     +3.30 |     +3.00 |    +21.71 |    +20.00 |
-PC Games                       | 79   |     +1.48 |     +1.00 |    +19.38 |    +14.00 |
-Screen Rant                    | 79   |     -2.87 |     +0.00 |    +21.75 |    +16.00 |
-IGN Spain                      | 78   |     +3.29 |     +2.50 |    +20.79 |    +16.00 |
-VideoGamer                     | 78   |     -0.56 |     +0.00 |    +11.90 |     +8.50 |
-PlayStation Universe           | 76   |     +2.18 |     +2.00 |    +23.50 |    +18.00 |
-4P.de                          | 74   |     -0.74 |     -1.00 |    +16.96 |    +13.00 |
-Checkpoint Gaming              | 74   |     +0.39 |     +0.50 |    +20.43 |    +18.00 |
-TheGamer                       | 72   |     -1.76 |     -1.00 |    +21.58 |    +16.00 |
-Eurogamer Italy                | 72   |     +2.43 |     +2.50 |    +20.35 |    +11.00 |
-Guardian                       | 72   |     -0.28 |     +3.00 |    +20.21 |    +15.00 |
-GameZone                       | 72   |     +5.06 |     +2.00 |    +11.24 |     +8.00 |
-XGN                            | 70   |     +0.27 |     +1.00 |    +19.50 |    +14.50 |
-Atomix                         | 70   |     +4.87 |     +4.50 |    +27.60 |    +23.00 |
-JeuxActu                       | 70   |     +0.29 |     +1.00 |    +23.80 |    +16.00 |
-Press Start Australia          | 69   |     +2.62 |     +3.00 |    +22.04 |    +18.00 |
-Wccftech                       | 69   |     +2.13 |     +2.00 |    +24.52 |    +20.00 |
-PLAY! Zine                     | 69   |     -4.43 |     -1.00 |    +20.00 |    +12.00 |
-PlaySense                      | 69   |     -2.77 |     -1.00 |    +22.06 |    +16.00 |
-IGN France                     | 66   |     -0.88 |     -1.00 |    +18.38 |    +14.00 |
-Games Master UK                | 66   |     +0.56 |     +0.00 |    +13.12 |     +8.50 |
-Digital Trends                 | 66   |     -4.83 |     -4.50 |    +20.45 |    +15.00 |
-ZTGD                           | 66   |     +1.12 |     +1.00 |    +12.91 |    +11.00 |
-Areajugones                    | 65   |     +5.54 |     +6.00 |    +25.46 |    +18.00 |
-GamePro                        | 65   |     +3.55 |     +4.00 |    +11.97 |    +11.00 |
-Game Rant                      | 64   |     +0.81 |     +3.00 |    +21.46 |    +17.00 |
-Power Unlimited                | 64   |     -0.39 |     +0.00 |    +20.88 |    +16.00 |
-games(TM)                      | 64   |     -4.88 |     -4.00 |     +8.22 |     +3.50 |
-GameSpy                        | 64   |     -1.23 |     +0.50 |     +5.73 |     +9.00 |
-3DJuegos                       | 63   |     +2.57 |     +2.00 |    +22.92 |    +11.00 |
-Gamersky                       | 62   |     +4.45 |     +4.00 |    +25.73 |    +19.50 |
-DarkStation                    | 62   |     +2.06 |     +3.50 |    +15.29 |     +9.00 |
-But Why Tho?                   | 60   |     +1.27 |     +4.00 |    +20.23 |    +22.50 |
-LEVEL (Czech Republic)         | 59   |     -0.56 |     +3.00 |    +15.73 |    +12.00 |
-PlayStation LifeStyle          | 59   |     +4.02 |     +5.00 |    +26.78 |    +19.00 |
-LevelUp                        | 58   |     +2.43 |     +4.00 |    +26.66 |    +19.50 |
-Softpedia                      | 57   |     +4.33 |     +5.00 |    +23.89 |    +22.00 |
-Noisy Pixel                    | 57   |     +2.81 |     +4.00 |    +19.11 |    +17.00 |
-GameSpew                       | 57   |     +2.72 |     +3.00 |    +20.09 |    +17.00 |
-Game Over Online               | 57   |     +1.82 |     +1.00 |    +12.84 |     +8.00 |
-GAMES.CH                       | 56   |     +5.05 |     +4.50 |    +25.59 |    +20.00 |
-Gamereactor UK                 | 56   |     +0.73 |     +1.00 |    +17.36 |    +14.50 |
-We Got This Covered            | 56   |     +0.11 |     +3.00 |    +23.66 |    +18.00 |
-GameGrin                       | 55   |     +3.60 |     +4.00 |    +21.22 |    +16.50 |
-Vgames                         | 54   |     -0.11 |     +2.00 |    +19.44 |    +14.50 |
-Cubed3                         | 53   |     -6.60 |     -5.00 |    +10.62 |     +9.00 |
-New Game Network               | 53   |     -5.70 |     -5.00 |    +19.00 |    +13.00 |
-SECTOR.sk                      | 52   |     +1.92 |     +1.00 |    +21.38 |    +19.00 |
-TechRadar Gaming               | 52   |     -1.17 |     -1.50 |    +17.94 |    +14.50 |
-Digitally Downloaded           | 51   |     +2.41 |     +3.00 |    +21.04 |    +17.00 |
-Armchair Empire                | 51   |     -0.14 |     +0.00 |     +7.04 |     +7.00 |
-G4 TV                          | 51   |     -0.90 |     +3.00 |     +4.70 |     +9.00 |
-1UP                            | 51   |     +0.14 |     +3.00 |     +6.92 |    +10.00 |
-MGG                            | 50   |     +0.74 |     -0.50 |    +22.78 |    +16.00 |
-BaziCenter                     | 50   |     +0.96 |     +2.00 |    +23.18 |    +16.50 |
-Merlin'in Kazanı (Turkey)      | 50   |     +0.48 |     +0.00 |    +22.52 |    +12.00 |
-Thunderbolt                    | 50   |     -0.62 |     +2.00 |     +5.24 |     +8.50 |
-Slant Magazine                 | 49   |    -10.35 |     -7.00 |     +2.90 |     +8.00 |
-Gamers' Temple                 | 49   |     +2.02 |     +2.00 |    +14.31 |    +11.00 |
-GamePro Germany                | 49   |     +2.41 |     +1.00 |    +20.94 |    +18.00 |
-Eurogamer Germany              | 48   |     +0.77 |     +3.00 |    +17.83 |    +14.50 |
-WellPlayed                     | 48   |     +1.21 |     +2.50 |    +21.27 |    +18.00 |
-AceGamez                       | 48   |     +0.83 |     +2.50 |     +9.40 |     +9.00 |
-PCGamesN                       | 47   |     -0.83 |     -2.00 |    +20.74 |    +19.00 |
-Malditos Nerds                 | 47   |     -1.30 |     +0.00 |    +18.57 |    +12.00 |
-Oyungezer                      | 46   |     -1.33 |     -1.00 |    +17.52 |    +14.00 |
-Attack of the Fanboy           | 46   |     +2.11 |     +3.00 |    +24.22 |    +17.00 |
-Playstation Official Magazine  | 46   |     -0.78 |     +1.00 |    +24.76 |    +15.00 |
-Siliconera                     | 45   |     -2.93 |     -2.00 |    +12.25 |    +11.50 |
-VGC                            | 45   |     -1.04 |     +1.00 |    +18.91 |    +17.00 |
-Dexerto                        | 45   |     -3.13 |     -2.00 |    +16.16 |    +13.00 |
-RPG Fan                        | 45   |     +2.13 |     +2.00 |    +14.38 |     +9.00 |
-TierraGamer                    | 45   |     +4.27 |     +4.00 |    +25.76 |    +21.00 |
-Yahoo!                         | 45   |     +0.87 |     +2.00 |     +9.29 |     +9.00 |
-Pelit (Finland)                | 44   |     +2.61 |     +0.00 |    +13.84 |     +7.00 |
-PSX Brasil                     | 43   |     +5.02 |     +5.00 |    +27.07 |    +23.50 |
-Gamestyle                      | 43   |     -3.67 |     -2.00 |     +5.65 |     +5.00 |
-IGN Adria                      | 42   |     -1.14 |     -2.50 |    +20.88 |    +18.00 |
-Hey Poor Player                | 42   |     -0.62 |     +0.00 |    +14.15 |     +8.00 |
-Telegraph                      | 42   |     -0.07 |     +4.00 |    +15.86 |    +11.00 |
-GameWatcher                    | 41   |     -0.49 |     +0.00 |    +17.10 |    +11.00 |
-GAMINGbible                    | 41   |     +2.95 |     +4.00 |    +18.98 |    +14.00 |
-GLHF on Sports Illustrated     | 41   |     -2.05 |     +0.00 |    +15.29 |    +13.00 |
-GameShark                      | 41   |     +0.71 |     +4.00 |     +9.05 |    +11.00 |
-MMORPG.com                     | 40   |     +0.35 |     +2.00 |    +19.48 |    +16.50 |
-Finger Guns                    | 40   |     -1.60 |     +1.00 |    +14.88 |    +14.50 |
-PALGN                          | 40   |     -2.00 |     -1.00 |     +4.45 |     +5.00 |
-Player 2                       | 39   |     +3.95 |     +4.00 |    +25.62 |    +23.00 |
-Eurogamer Poland               | 39   |     -5.15 |     -4.00 |    +12.87 |    +11.00 |
-Het Nieuwsblad                 | 39   |     -6.00 |     -3.00 |    +15.90 |    +15.00 |
-NME                            | 39   |     -1.41 |     -4.00 |    +20.13 |    +17.00 |
-GameSkinny                     | 39   |     -1.10 |     -1.00 |    +20.21 |    +16.00 |
-Game Chronicles                | 39   |     +2.97 |     +3.00 |    +10.79 |    +10.00 |
-Play Magazine                  | 39   |     +2.15 |     +3.00 |    +10.49 |    +10.00 |
-Gamers Heroes                  | 38   |     +4.18 |     +5.00 |    +20.66 |    +18.00 |
-Critical Hit                   | 38   |     -0.18 |     +2.00 |    +21.76 |    +10.50 |
-VG247                          | 38   |     +2.92 |     +4.50 |    +24.00 |    +19.50 |
-GameTrailers                   | 38   |     +0.47 |     +0.50 |     +9.58 |     +7.50 |
-Electronic Gaming Monthly      | 38   |     -0.55 |     +1.00 |     +5.97 |     +8.00 |
-Inverse                        | 37   |     +0.24 |     -1.00 |    +16.83 |    +17.00 |
-AusGamers                      | 37   |     -0.76 |     +3.00 |    +16.49 |    +12.00 |
-GGRecon                        | 37   |     +0.00 |     +4.00 |    +20.43 |    +19.00 |
-MeuPlayStation                 | 37   |     +3.78 |     +5.00 |    +26.24 |    +23.00 |
-NZGamer                        | 37   |     +1.95 |     +1.00 |    +13.08 |     +9.00 |
-INVEN                          | 36   |     +3.11 |     +4.00 |    +22.92 |    +16.50 |
-Stevivor                       | 36   |     -3.67 |     -2.50 |    +16.06 |    +12.00 |
-ComicBook                      | 35   |     -2.26 |     -3.00 |    +21.37 |    +18.00 |
-Eurogamer Portugal             | 35   |     -3.83 |     -2.00 |    +10.94 |    +10.00 |
-GamesHub                       | 35   |     +1.63 |     +4.00 |    +21.66 |    +18.00 |
-GameSpace                      | 34   |     +2.68 |     +1.00 |    +24.97 |    +15.00 |
-Gameplanet                     | 34   |     +0.35 |     +1.00 |    +10.50 |     +9.00 |
-Daily Star                     | 34   |     +5.79 |     +6.00 |    +25.97 |    +19.50 |
-LaPS4                          | 34   |     +4.68 |     +4.00 |    +25.53 |    +17.50 |
-Total Video Games              | 34   |     -0.59 |     -0.50 |     +6.03 |     +7.50 |
-Gamepressure                   | 33   |     -0.88 |     +1.00 |    +17.67 |    +13.00 |
-Video Chums                    | 33   |     +0.85 |     -2.00 |    +15.22 |     +9.50 |
-GameMAG                        | 33   |     -6.73 |     -5.00 |    +15.00 |    +12.00 |
-PLAY                           | 33   |     -3.55 |     +0.00 |    +17.27 |    +15.00 |
-Official Xbox Magazine         | 33   |     +1.18 |     +1.00 |     +6.88 |    +10.00 |
-GamersRD                       | 32   |     +0.34 |     +1.50 |    +21.78 |    +18.50 |
-Windows Central                | 32   |     +3.44 |     +5.50 |    +23.97 |    +21.50 |
-Riot Pixels                    | 32   |    -10.75 |    -13.00 |     +7.59 |     +3.00 |
-USgamer                        | 32   |     -3.16 |     -3.00 |    +18.78 |    +11.00 |
-Digital Spy                    | 32   |     -0.03 |     +3.00 |    +13.39 |    +12.00 |
-The Jimquisition               | 32   |    -12.19 |     -9.00 |     +1.31 |     +3.50 |
-Hooked Gamers                  | 31   |     +4.48 |     +7.00 |    +24.58 |    +22.00 |
-Gfinity                        | 31   |     -1.32 |     +1.00 |    +14.68 |    +14.00 |
-Easy Allies                    | 31   |     -0.74 |     +2.00 |    +14.74 |    +11.00 |
-Trusted Reviews                | 31   |     +0.06 |     +1.00 |    +23.29 |    +12.00 |
-Computer and Video Games       | 31   |     +0.55 |     +0.00 |     +7.48 |     +7.00 |
-PSX Extreme                    | 31   |     +1.42 |     +2.00 |    +14.42 |     +9.00 |
-IGN Portugal                   | 30   |     +0.50 |     +1.50 |    +20.13 |    +16.00 |
-IGN Japan                      | 30   |     -0.10 |     +1.50 |    +19.47 |    +11.50 |
-ActionTrip                     | 30   |     +0.43 |     -1.00 |     +9.13 |     +5.00 |
-AtomicGamer                    | 30   |     +1.57 |     +0.50 |     +8.13 |     +8.00 |
-Jolt Online Gaming UK          | 29   |     -3.10 |     +0.00 |     +3.34 |     +6.00 |
-InsideGamer.nl                 | 29   |     -2.76 |     -2.00 |    +13.62 |     +6.00 |
-Forbes                         | 29   |     +3.79 |     +4.00 |    +37.83 |    +38.00 |
-Ragequit.gr                    | 28   |     +3.61 |     +4.00 |    +26.50 |    +21.00 |
-The Enemy                      | 28   |     -3.21 |     -2.50 |    +19.96 |    +15.50 |
-TrueGaming                     | 28   |     +1.79 |     +2.50 |    +24.96 |    +15.50 |
-Gamer 2.0                      | 28   |     +0.86 |     -0.50 |     +6.32 |     +7.00 |
-GameCrate                      | 27   |     +2.56 |     +2.00 |    +22.00 |    +17.00 |
-App Trigger                    | 27   |     -1.04 |     +2.00 |    +25.48 |    +18.00 |
-NintendoWorldReport            | 27   |     +1.56 |     +3.00 |     +9.19 |     +9.00 |
-4Players.de                    | 27   |     +0.52 |     -2.00 |    +22.89 |    +16.00 |
-Game World Navigator Magazine  | 26   |     -4.50 |     -3.00 |    +11.65 |     +5.50 |
-Play.tm                        | 26   |     +0.04 |     +0.00 |     +7.69 |     +7.00 |
-GamerNode                      | 26   |     +0.46 |     +0.50 |     +6.12 |     +6.50 |
-Post Arcade (National Post)    | 26   |     -0.08 |     +0.50 |    +15.50 |    +10.00 |
-Giant Bomb                     | 26   |     -0.46 |     +3.50 |    +10.73 |    +11.00 |
-Kombo                          | 26   |     +0.69 |     +1.00 |     +8.42 |     +9.00 |
-TeamXbox                       | 26   |     +1.62 |     +2.00 |     +7.81 |     +9.00 |
-Gameliner                      | 25   |     +1.04 |     +5.00 |    +17.80 |    +22.00 |
-GamesBeat                      | 25   |     -0.12 |     +0.00 |    +13.64 |     +9.00 |
-Official Xbox Magazine UK      | 25   |     -0.64 |     -2.00 |     +6.52 |     +7.00 |
-My Gamer                       | 25   |     -3.04 |     -2.00 |     +1.84 |     +3.00 |
-KeenGamer                      | 24   |     +4.88 |     +4.00 |    +21.17 |    +17.50 |
-TotalGames.net                 | 24   |     -0.92 |     +1.00 |     +7.22 |     +7.00 |
-Games Radar                    | 24   |     -0.38 |     +0.00 |     +6.96 |     +7.00 |
-The Sydney Morning Herald      | 24   |     +3.88 |     +4.50 |    +18.67 |    +11.00 |
-DarkZero                       | 24   |     -1.62 |     +1.50 |     +8.46 |     +9.50 |
-The Digital Fix                | 23   |     +0.30 |     +3.00 |    +13.83 |     +9.00 |
-PC Invasion                    | 23   |     -1.04 |     +1.00 |    +20.70 |    +16.00 |
-EGM                            | 23   |     +4.35 |     +3.00 |    +21.09 |    +15.00 |
-Extreme Gamer                  | 23   |     +2.48 |     +2.00 |     +9.78 |     +9.00 |
-PCMag                          | 22   |     -3.23 |     -3.00 |    +17.41 |    +12.00 |
-Washington Post                | 22   |     -0.73 |     -3.00 |    +11.82 |     +9.00 |
-PGNx Media                     | 22   |     +4.18 |     +3.50 |    +12.32 |    +10.00 |
-Level7.nu                      | 22   |     -5.82 |     -4.50 |     +4.45 |     +3.50 |
-GameDaily                      | 22   |     -1.50 |     -4.00 |     +3.41 |     +4.00 |
-The A.V. Club                  | 22   |     +0.55 |     +3.50 |    +10.50 |    +11.00 |
-Boomtown                       | 22   |     -2.59 |     -4.50 |     +2.77 |     +2.00 |
-X-ONE Magazine UK              | 22   |     -0.55 |     +2.00 |     +4.23 |     +9.00 |
-eToychest                      | 22   |     -0.50 |     +2.00 |     +7.41 |     +7.00 |
-IGN Deutschland                | 21   |     -2.29 |     -3.00 |    +14.24 |    +12.00 |
-Voxel                          | 21   |     +4.86 |     +6.00 |    +25.38 |    +26.00 |
-Gamekult                       | 21   |    -13.48 |    -14.00 |     -0.38 |     -1.00 |
-The New York Times             | 21   |     -6.52 |     -6.00 |     +5.57 |     +3.00 |
-XboxAddict                     | 21   |     +3.38 |     +2.00 |    +12.48 |    +11.00 |
-M3                             | 21   |     -3.57 |     -3.00 |    +19.76 |    +12.00 |
-The Loadout                    | 21   |     -3.71 |     -3.00 |    +16.05 |    +13.00 |
-RPGamer                        | 21   |     -0.81 |     -2.00 |    +10.05 |    +11.00 |
-Da Gameboyz                    | 21   |     +0.24 |     -1.00 |     +8.05 |     +6.00 |
-Next Level Gaming              | 21   |     +4.24 |     +3.00 |    +10.33 |     +7.00 |
-netjak                         | 21   |     -6.14 |     -4.00 |     -1.62 |     +1.00 |
-IGN Benelux                    | 20   |     +1.80 |     +1.00 |    +19.70 |    +17.50 |
-Movies Games and Tech          | 20   |     +3.00 |     -0.50 |    +14.90 |    +12.00 |
-Pocket-lint                    | 20   |     -0.35 |     -3.00 |    +13.85 |    +13.50 |
-GMR Magazine                   | 20   |     -1.95 |     +0.50 |     +3.50 |     +8.00 |
-Gaming Target                  | 20   |     +2.10 |     +2.00 |     +9.10 |     +9.00 |
-Play UK                        | 20   |     -0.55 |     +0.00 |     +9.85 |     +9.00 |
-Xbox Achievements              | 20   |     +0.35 |     +0.50 |    +10.50 |     +9.00 |
-Gamer's Hell                   | 20   |     +1.25 |     +0.00 |     +8.90 |     +5.50 |
-Nintendo Life                  | 19   |     +3.74 |     +5.00 |    +11.74 |    +10.00 |
-Loot Level Chill               | 19   |     +5.68 |     +6.00 |    +17.94 |    +16.00 |
-PlayStation Country            | 19   |     -0.79 |     +0.00 |    +25.79 |    +19.00 |
-Gamezilla!                     | 19   |     +2.00 |     +1.00 |     +8.32 |     +7.00 |
-GamingExcellence               | 19   |     +0.26 |     +1.00 |     +4.58 |     +8.00 |
-WHAM! Gaming                   | 19   |     -0.89 |     +1.00 |     +4.53 |     +6.00 |
-Planet Xbox 360                | 19   |     +3.47 |     +4.00 |    +11.00 |    +11.00 |
-Console Gameworld              | 19   |     -2.26 |     -2.00 |     -1.42 |     +4.00 |
-Deeko                          | 19   |     +1.32 |     +1.00 |     +9.37 |     +9.00 |
-RPG Site                       | 18   |     +0.39 |     +2.00 |     +9.67 |    +11.00 |
-All Game Guide                 | 18   |     -4.89 |     -5.50 |     +0.28 |     +0.00 |
-Polygon                        | 18   |     -4.83 |     -4.00 |    +10.67 |     +9.00 |
-MondoXbox                      | 18   |     +5.83 |     +5.00 |    +16.94 |    +14.50 |
-Nintendojo                     | 18   |     +7.83 |     +5.00 |    +10.94 |     +8.50 |
-GameFocus                      | 18   |     +0.78 |     +1.50 |    +10.72 |     +9.50 |
-NTSC-uk                        | 18   |     -8.89 |     -5.50 |     -1.50 |     -1.00 |
-GIGA                           | 17   |     +1.82 |     +0.00 |    +25.53 |    +25.00 |
-IGN Brasil                     | 17   |     +1.18 |     +1.00 |    +17.82 |    +12.00 |
-Try Hard Guides                | 17   |    +10.06 |    +11.00 |    +24.47 |    +26.00 |
-Carole Quintaine               | 17   |     +5.35 |     +6.00 |    +22.12 |    +19.00 |
-Adrenaline Vault               | 17   |     -1.82 |     +4.00 |     +4.71 |     +8.00 |
-Playstation Official Magazine  | 17   |     +1.94 |     +4.00 |    +11.00 |    +11.00 |
-Console Monster                | 17   |     +1.12 |     +0.00 |     +9.00 |     +8.00 |
-Xbox World 360 Magazine UK     | 17   |     -1.18 |     -1.00 |     +3.24 |     +5.00 |
-Electric Playground            | 16   |     -2.81 |     -0.50 |     +1.31 |     +2.50 |
-Computer Games Magazine        | 16   |     -3.44 |     +0.00 |     -2.25 |     +2.50 |
-IC-Games                       | 16   |     +2.75 |     +2.00 |    +10.38 |     +9.50 |
-Nintendo Power                 | 16   |     +5.25 |     +3.50 |     +6.38 |     +5.50 |
-DailyGame                      | 16   |     +0.62 |     +1.00 |     +5.81 |     +6.00 |
-MS Xbox World                  | 16   |     -0.75 |     +0.00 |     +6.56 |     +8.00 |
-Official U.S. Playstation Mag  | 16   |     +0.81 |     +4.50 |     +9.06 |    +10.50 |
-Game8                          | 15   |     +0.47 |     +1.00 |    +11.67 |    +11.00 |
-PlayGround.ru                  | 15   |     -1.20 |     +1.00 |    +30.87 |    +35.00 |
-Gamers Europe                  | 15   |     -6.13 |     -4.00 |     +0.87 |     +4.00 |
-Gamereactor Sweden             | 15   |     +1.33 |     +4.00 |    +10.27 |    +11.00 |
-The Escapist                   | 15   |     -3.53 |     -2.00 |     +7.07 |     +2.00 |
-IGN AU                         | 15   |     -0.87 |     +0.00 |     +7.27 |     +7.00 |
-PSM Magazine                   | 15   |     +3.40 |     +4.00 |    +17.20 |    +12.00 |
-Gamereactor Denmark            | 14   |     +1.93 |     +2.00 |    +13.50 |     +9.00 |
-GamerFeed                      | 14   |     -3.36 |     -4.00 |     +3.50 |     +3.00 |
-XboxEra                        | 14   |     +6.57 |     +5.00 |    +23.86 |    +20.50 |
-SomosXbox                      | 14   |     +7.79 |     +7.50 |    +26.29 |    +23.00 |
-Gamervision                    | 14   |     +1.86 |     +2.00 |    +11.64 |    +11.00 |
-GamingXP                       | 14   |     -1.64 |     -2.50 |     +5.71 |     +4.50 |
-Xbox World Australia           | 14   |     -0.43 |     -0.50 |     +7.71 |     +8.00 |
-Into Liquid Sky                | 14   |     +3.07 |     +4.00 |     +9.57 |     +9.00 |
-GameBlast                      | 13   |     +1.62 |     +2.00 |    +11.58 |    +13.00 |
-Gamer's Pulse                  | 13   |     +2.38 |     +2.00 |     +6.58 |     +6.50 |
-BonusStage                     | 13   |     +2.31 |     +4.00 |     +7.46 |     +7.00 |
-TotalPlayStation               | 13   |     +2.69 |     +2.00 |    +12.23 |     +8.00 |
-PTGamers                       | 13   |     +0.46 |     +2.00 |     +7.54 |     +5.00 |
-GameNow                        | 13   |     +3.23 |     +5.00 |    +10.92 |    +11.00 |
-Maxim Online                   | 13   |     +5.15 |     +5.00 |    +11.54 |     +9.00 |
-Cinescape                      | 13   |     +0.77 |     +4.00 |     +7.83 |     +8.50 |
-Gamer Escape                   | 12   |     -0.08 |     -1.00 |    +17.83 |    +18.00 |
-Irish Independent              | 12   |     +3.75 |     +4.50 |    +25.58 |    +27.50 |
-NPR                            | 12   |     +0.33 |     +1.00 |    +18.08 |    +15.00 |
-Game Almighty                  | 12   |     +2.58 |     -2.00 |     +2.42 |     +3.50 |
-Eurogamer Spain                | 12   |     +0.58 |     +3.00 |    +11.92 |    +11.00 |
-MEGamers                       | 12   |     -2.08 |     +0.00 |     +7.58 |     +9.50 |
-Totally360                     | 12   |     +3.08 |     +3.00 |    +11.75 |    +10.00 |
-Digital Entertainment News     | 12   |     -2.58 |     -1.00 |     +0.25 |     +1.00 |
-This Is Game                   | 11   |     +0.27 |     +1.00 |    +13.36 |    +13.00 |
-PC PowerPlay                   | 11   |     -6.27 |     -6.00 |     +3.91 |    +10.00 |
-Dot Esports                    | 11   |     +3.27 |     +1.00 |    +22.82 |    +23.00 |
-GINX TV                        | 11   |     +5.27 |     +6.00 |    +27.55 |    +22.00 |
-Cincinnati Enquirer            | 11   |     -3.45 |     -4.00 |     +4.91 |     +1.00 |
-New York Daily News            | 11   |     -0.73 |     +2.00 |    +23.18 |    +12.00 |
-Nintendo Gamer                 | 11   |     -2.64 |     +0.00 |     -0.09 |     +6.00 |
-BigPond GameArena              | 11   |     +2.55 |     +4.00 |    +11.73 |    +11.00 |
-Cynamite                       | 11   |     +1.64 |     +2.00 |     +9.45 |    +11.00 |
-Talk Xbox                      | 11   |     +3.27 |     +2.00 |     +7.18 |    +11.00 |
-Maxi Consolas (Portugal)       | 11   |     +3.27 |     +4.00 |    +14.64 |    +12.00 |
-GameBiz                        | 11   |     +1.36 |     +1.00 |     +9.55 |     +6.00 |
-Gamer.tv                       | 11   |     +3.91 |     +4.00 |    +14.09 |     +9.00 |
-PSX Nation                     | 11   |     +5.91 |     +2.00 |    +13.09 |    +13.00 |
-Gamesurf                       | 10   |     +3.20 |     +3.00 |    +15.90 |    +14.50 |
-Nintendo Insider               | 10   |     +0.10 |     +2.50 |     +4.20 |     +7.00 |
-Generación Xbox                | 10   |     +9.70 |     +8.50 |    +22.40 |    +21.50 |
-Gamenikki                      | 10   |     -4.60 |     -4.00 |     +1.50 |     +2.00 |
-Gamereactor Finland            | 10   |     +1.00 |     +5.00 |    +15.00 |    +13.50 |
-Joystiq                        | 10   |     +2.60 |     +3.50 |     +8.90 |    +11.00 |
-IncGamers                      | 10   |     -8.10 |     -5.00 |     +2.70 |     +4.00 |
-IGN UK                         | 10   |     +0.90 |     +2.00 |    +10.40 |     +9.50 |
-Video Game Talk                | 10   |     -2.10 |     -4.00 |     +2.80 |     +6.00 |
-Xbox Nation Magazine           | 10   |     -0.50 |     +0.50 |     +3.44 |     +6.00 |
-Entertainment Weekly           | 10   |     +0.40 |     +5.50 |     +9.50 |    +12.00 |
-Inside Gamer Online            | 10   |     +1.10 |     +1.00 |     +7.90 |     +6.00 |
-XGP Gaming                     | 10   |     +1.60 |     +1.00 |     +8.40 |     +6.50 |
-VGPub                          | 10   |     +1.40 |     +2.50 |     +7.70 |     +9.00 |
-Pocket Tactics                 | 9    |     +3.44 |     +5.00 |    +11.11 |     +8.00 |
-Final Weapon                   | 9    |    -18.78 |    -13.00 |     -1.00 |     +3.00 |
-Vooks                          | 9    |     +3.89 |     +4.00 |    +12.11 |    +11.00 |
-Critical Hits                  | 9    |     -0.22 |     -3.00 |    +12.56 |    +15.00 |
-TheXboxHub                     | 9    |     +8.00 |     +9.00 |    +21.00 |    +22.00 |
-Cultured Vultures              | 9    |     -3.00 |     -1.00 |    +18.56 |    +17.00 |
-Switch Player                  | 9    |     -2.11 |     -1.00 |     +8.11 |    +11.00 |
-CPUGamer                       | 9    |     +4.00 |     +1.00 |     +3.67 |     +6.00 |
-Computer Games Online RO       | 9    |     -1.44 |     -2.00 |     +3.78 |     +4.00 |
-Pure Xbox                      | 9    |     -0.89 |     +0.00 |    +11.67 |    +14.00 |
-TrueAchievements               | 9    |     +4.78 |     +6.00 |    +17.89 |    +21.00 |
-The Mako Reactor               | 9    |     +8.67 |     +7.00 |    +27.44 |    +26.00 |
-Pocket Gamer UK                | 9    |     +2.22 |     +2.00 |     +7.89 |     +8.00 |
-Quarter to Three               | 9    |    -18.22 |    -13.00 |    -10.11 |     -1.00 |
-D+PAD Magazine                 | 9    |     +2.89 |     +4.00 |    +10.56 |    +11.00 |
-Official Nintendo Magazine UK  | 9    |     +6.11 |     +2.00 |    +17.89 |     +7.00 |
-GameTap                        | 9    |     +0.44 |     +3.00 |     +8.78 |     +9.00 |
-360 Gamer Magazine UK          | 9    |     -7.11 |     -6.00 |     +0.11 |     +2.00 |
-Game Power Australia           | 9    |     +0.11 |     -1.00 |     +4.89 |     +5.00 |
-Nintenderos                    | 8    |     +5.25 |     +9.50 |    +12.00 |    +11.50 |
-Combo Infinito                 | 8    |     +0.88 |     +1.00 |    +13.62 |    +12.50 |
-Cultura Geek                   | 8    |     +0.75 |     -1.00 |    +20.75 |    +18.00 |
-Restart.run                    | 8    |     -1.75 |     +0.50 |     +9.14 |    +13.00 |
-DBLTAP                         | 8    |     -4.50 |     -5.50 |     +5.25 |     +4.00 |
-FANDOM                         | 8    |     -5.50 |     -4.00 |    +15.75 |    +11.00 |
-Nintendo Force Magazine        | 8    |     +1.38 |     +3.50 |    +10.12 |    +11.50 |
-MGG Spain                      | 8    |     +1.38 |     +2.50 |    +27.62 |    +15.00 |
-Times Online                   | 8    |    +10.38 |     +6.00 |    +18.50 |    +15.00 |
-Gaming Illustrated             | 8    |     +0.88 |     -0.50 |     +6.88 |     +6.50 |
-PSM3 Magazine UK               | 8    |     -0.38 |     -0.50 |     +9.62 |     +8.50 |
-Gamer Limit                    | 8    |     -2.75 |     -0.50 |     +1.00 |     +6.00 |
-Gamers.at                      | 8    |     +0.88 |     -3.50 |     +5.88 |     +2.00 |
-RealGamer                      | 8    |     -4.88 |     -1.00 |     +3.12 |     +6.00 |
-WonderwallWeb                  | 8    |     +5.88 |     +3.00 |    +14.62 |    +13.00 |
-Nintendophiles                 | 8    |     +2.75 |     +4.00 |     +3.25 |     +9.00 |
-GameBrink                      | 8    |     +3.25 |     +2.50 |    +11.75 |     +5.00 |
-Gaming Horizon                 | 8    |     +1.38 |     +1.50 |     +8.25 |     +6.00 |
-3DAvenue                       | 8    |     -0.38 |     -2.50 |     +7.62 |     +5.50 |
-GameSpot AU                    | 8    |     +0.25 |     -1.00 |     +5.75 |     +4.50 |
-Nintenduo                      | 7    |     -1.71 |     -3.00 |     +7.14 |     +3.00 |
-The Daily Dot                  | 7    |     -7.71 |     -7.00 |    +10.14 |     +3.00 |
-Just Adventure                 | 7    |     +3.57 |     +4.00 |    +10.57 |    +12.00 |
-PC Gameworld                   | 7    |     -1.71 |     -1.00 |     +1.14 |     +0.00 |
-GamerArchive                   | 7    |     -3.00 |     -5.00 |     +3.14 |     +3.00 |
-GamesVillage.it                | 7    |     +5.29 |     +4.00 |    +19.29 |    +13.00 |
-Kill Screen                    | 7    |    -10.00 |    -22.00 |    +13.43 |     -4.00 |
-PC Gamer UK                    | 7    |     +1.86 |     +1.00 |    +10.00 |     +6.00 |
-Radio Times                    | 7    |     -1.71 |     -2.00 |    +25.71 |    +18.00 |
-Comicbook.com                  | 7    |     -1.29 |     +2.00 |    +34.29 |    +49.00 |
-Universo Nintendo              | 7    |     +4.57 |     +4.00 |    +13.29 |    +12.00 |
-Pure Nintendo                  | 7    |     -5.57 |    -13.00 |     +7.29 |    +12.00 |
-Machinima                      | 7    |     +3.57 |     +3.00 |    +10.71 |     +8.00 |
-Kikizo                         | 7    |     -0.86 |     +1.00 |     +9.57 |    +10.00 |
-Wired                          | 7    |     -8.43 |     -6.00 |     -0.14 |     +1.00 |
-Gameplayer                     | 7    |     +1.57 |     +3.00 |    +11.71 |    +12.00 |
-Xboxic                         | 7    |     -1.43 |     -4.00 |     +4.57 |     +5.00 |
-Game Positive                  | 7    |     -1.14 |     -1.00 |     +6.43 |     +7.00 |
-GamingWorld X                  | 7    |     +0.29 |     +1.00 |    +11.57 |     +9.00 |
-Detroit Free Press             | 7    |     -6.43 |     +4.00 |     -2.86 |     +9.00 |
-Warcry                         | 7    |     -8.14 |     -4.00 |     +4.86 |     +4.00 |
-Just RPG                       | 7    |     +4.71 |     +2.00 |    +11.14 |     +9.00 |
-Official Playstation 2 Magazi  | 7    |     -2.71 |     -4.00 |     +6.14 |     +7.00 |
-PlayUA                         | 6    |     +2.67 |     +2.50 |    +18.83 |    +17.00 |
-The Indie Informer             | 6    |     +8.50 |    +10.00 |    +21.00 |    +20.00 |
-Creative Bloq                  | 6    |     +5.67 |     +6.50 |    +16.83 |    +18.00 |
-FiringSquad                    | 6    |     +0.00 |     -1.00 |     +6.00 |     +3.00 |
-Computer Gaming World          | 6    |     -6.00 |     -7.00 |     -3.83 |     -6.50 |
-RewiredMind                    | 6    |     +2.33 |     +1.50 |     +8.50 |     +7.50 |
-Xbox Tavern                    | 6    |     +1.83 |     +5.50 |    +15.83 |    +16.50 |
-Launcher (The Washington Post  | 6    |     +2.83 |     +1.00 |    +29.17 |    +26.00 |
-GameByte                       | 6    |     -4.33 |     -3.50 |    +19.67 |    +16.00 |
-TouchArcade                    | 6    |     +1.50 |     +4.00 |    +27.50 |    +16.00 |
-Shindig                        | 6    |     +4.50 |     +4.00 |    +27.83 |    +21.00 |
-Toronto Sun                    | 6    |     -2.50 |     -1.00 |     +4.17 |     +5.00 |
-HellBored                      | 6    |     -0.67 |     +1.00 |     +6.00 |     +6.00 |
-GotNext                        | 6    |     +7.17 |     +5.00 |    +13.33 |    +12.50 |
-Ferrago                        | 6    |     -2.67 |     -3.00 |     +5.67 |     +3.50 |
-Xequted                        | 6    |     -3.67 |     -3.50 |     +1.33 |     +1.50 |
-KonsoliFIN                     | 5    |     -2.80 |     -4.00 |    +17.60 |    +14.00 |
-Saudi Gamer                    | 5    |     +1.20 |     +2.00 |    +12.80 |    +19.00 |
-The Outerhaven                 | 5    |    +10.00 |    +11.00 |    +27.00 |    +22.50 |
-Endless Mode                   | 5    |     -1.40 |     +1.00 |     -5.25 |     -5.50 |
-ScreenHub                      | 5    |     -7.00 |     -1.00 |     +6.20 |    +22.00 |
-FNintendo                      | 5    |     -2.00 |     -2.00 |     +3.00 |     +2.00 |
-Gamereactor Spain              | 5    |     +2.40 |     +6.00 |    +11.80 |    +12.00 |
-Adventure Game Hotspot         | 5    |     +2.60 |     +8.00 |    +22.40 |    +19.00 |
-ElDesmarque                    | 5    |     +5.20 |     +7.00 |    +15.40 |    +22.00 |
-Four Fat Chicks                | 5    |     +2.20 |     +4.00 |     +9.20 |    +10.00 |
-PC Format                      | 5    |     +0.00 |     -1.00 |     +9.60 |     +8.00 |
-Arcade Sushi                   | 5    |     +0.60 |     +2.00 |     +6.80 |     +9.00 |
-PC Zone UK                     | 5    |     -4.00 |     -2.00 |     -3.40 |     +4.00 |
-Variety                        | 5    |     -6.40 |     -6.00 |    +15.40 |    +18.00 |
-Playstation: The Official Mag  | 5    |     +1.40 |     +2.00 |     +9.60 |    +11.00 |
-Game Debate                    | 5    |     -2.20 |     +1.00 |    +10.60 |    +10.00 |
-Eurogamer Sweden               | 5    |     -1.60 |     +5.00 |     +0.80 |     +8.00 |
-Hyper Magazine                 | 5    |     -3.20 |     -5.00 |     +9.60 |    +12.00 |
-GameFront                      | 5    |     -3.60 |     +1.00 |     +9.60 |     +8.00 |
-Brash Games                    | 5    |     -2.80 |     -3.00 |    +11.40 |    +17.00 |
-Videogameszone.de              | 5    |     -2.40 |     -2.00 |     +1.20 |     +4.00 |
-Absolute Games                 | 5    |    -10.80 |     -7.00 |     +0.60 |     +0.00 |
-Gaming Maxx                    | 5    |     +0.00 |     -1.00 |     +8.80 |     +8.00 |
-Stuff                          | 5    |     +1.80 |     +4.00 |     +9.40 |    +11.00 |
-Weekly Famitsu                 | 5    |     +4.80 |     +4.00 |     +8.20 |     +7.00 |
-Playboy                        | 5    |     +8.40 |     +4.00 |    +18.00 |     +9.00 |
-GamerWeb Sony                  | 5    |     +4.20 |     -1.00 |    +11.60 |    +11.00 |
-Invader                        | 4    |     +4.50 |     +5.00 |    +11.50 |    +12.50 |
-Tech-Gaming                    | 4    |     -1.00 |     -1.00 |     +8.75 |     +9.00 |
-Omelete                        | 4    |     -2.50 |     -5.00 |     +2.25 |     +3.00 |
-Strategy Gamer                 | 4    |     -0.25 |     +1.50 |    +24.25 |    +16.50 |
-PCWorld                        | 4    |     +2.25 |     +0.50 |    +14.50 |     +5.50 |
-Nintendo Enthusiast            | 4    |     +3.00 |     +3.00 |     +8.25 |    +11.00 |
-UploadVR                       | 4    |    -12.00 |     -8.00 |     +3.75 |     +6.00 |
-Happy Puppy                    | 4    |     -5.50 |     -5.00 |     -0.50 |     +2.00 |
-Dealspwn                       | 4    |     -6.25 |     -7.50 |     +3.25 |     +4.00 |
-The So Videogames Podcast      | 4    |     -2.00 |     -5.50 |    +15.75 |    +12.00 |
-The Times                      | 4    |     -5.50 |     -4.50 |    +16.00 |    +13.50 |
-Android Central                | 4    |     -2.00 |     -1.50 |    +19.50 |     +9.50 |
-T3                             | 4    |    -13.75 |    -16.00 |     -3.00 |     -5.50 |
-CalmDownTom                    | 4    |    +10.25 |    +12.50 |    +31.50 |    +28.00 |
-IBTimes UK                     | 4    |     +3.75 |     +3.00 |    +21.00 |    +11.00 |
-My Nintendo News               | 4    |     -1.50 |     -3.00 |    +11.75 |     +7.00 |
-NowGamer                       | 4    |     -9.75 |    -11.00 |     -5.50 |     -6.50 |
-The Overpowered Noobs          | 4    |    -13.00 |    -13.00 |     +5.50 |     -5.50 |
-N-Europe                       | 4    |     +1.25 |     +1.00 |    +19.00 |    +10.50 |
-GamesNation                    | 4    |     -1.00 |     -1.00 |     +5.75 |     +6.00 |
-GamerWeb Nintendo              | 4    |     +0.25 |     +0.50 |     +5.25 |     +6.50 |
-Firing Squad                   | 4    |     -7.00 |     -3.00 |     +1.75 |     +6.50 |
-n-Revolution Magazine UK       | 4    |     -4.75 |     -1.00 |     -4.50 |    -16.00 |
-GameCube Europe                | 4    |     +2.00 |     +0.50 |     +5.00 |     +5.00 |
-N-Insanity                     | 4    |     +1.50 |     +2.00 |     +7.25 |     +7.50 |
-XenGamers                      | 4    |     +0.25 |     +1.00 |     +5.75 |     +5.00 |
-VideoGamesLife                 | 4    |     -3.75 |     -4.00 |     +0.00 |     +2.00 |
-Media and Games Online Networ  | 4    |    +11.00 |     +4.50 |    +17.50 |    +14.50 |
-Toisto                         | 3    |     +3.00 |    +15.00 |    +15.00 |    +32.00 |
-IGN Turkey                     | 3    |     -9.67 |     -6.00 |    +20.33 |    +24.00 |
-Adventure Gamers               | 3    |     +1.00 |     -4.00 |    +21.00 |     +3.00 |
-The Indie Game Website         | 3    |     -2.00 |     -1.00 |     -1.33 |     -2.00 |
-Hot Games                      | 3    |     +6.00 |     +6.00 |    +11.67 |    +11.00 |
-Gamers Depot                   | 3    |     -4.67 |     +4.00 |     -2.67 |     +9.00 |
-Metro Montreal                 | 3    |     -6.33 |     -7.00 |    +13.67 |     +1.00 |
-Starbit                        | 3    |     +2.33 |     +4.00 |    +19.67 |    +12.00 |
-9Lives                         | 3    |     -2.00 |     -1.00 |     +4.67 |     +5.00 |
-Modojo                         | 3    |     +0.33 |     +3.00 |    +18.67 |     +6.00 |
-YouGamers                      | 3    |     -3.33 |     -1.00 |     +7.33 |     +8.00 |
-Zentendo                       | 3    |     +3.33 |     +3.00 |    +24.67 |     +9.00 |
-Australian GamePro             | 3    |     +5.67 |     +4.00 |     +9.00 |     +9.00 |
-Xbox Evolved                   | 3    |     +3.00 |     +3.00 |    +11.67 |    +12.00 |
-Xbox Solution                  | 3    |     +1.33 |     +1.00 |    +10.00 |    +10.00 |
-Retcon                         | 2    |     -7.00 |     -7.00 |     -4.00 |     -4.00 |
-Let's Play Video Games         | 2    |     +7.00 |     +7.00 |    +11.50 |    +11.50 |
-Road to VR                     | 2    |     +1.50 |     +1.50 |     +1.00 |     +1.00 |
-GamerWeb PC                    | 2    |     +2.00 |     +2.00 |     +4.00 |     +4.00 |
-The Independent                | 2    |     -1.50 |     -1.50 |     +9.50 |     +9.50 |
-The Globe and Mail (Toronto)   | 2    |     -4.00 |     -4.00 |     +0.00 |     +0.00 |
-PC Master (Greece)             | 2    |     +5.00 |     +5.00 |    +20.50 |    +20.50 |
-Time                           | 2    |     +5.00 |     +5.00 |    +15.00 |    +15.00 |
-Gameplayer Sweden              | 2    |     -6.00 |     -6.00 |     +1.00 |     +1.00 |
-PSNStores                      | 2    |    +10.00 |    +10.00 |    +10.50 |    +10.50 |
-GamerWeb Xbox                  | 2    |     +3.00 |     +3.00 |     +1.50 |     +1.50 |
-The Wiire                      | 2    |     +4.00 |     +4.00 |    +10.00 |    +10.00 |
-FHM                            | 2    |     +4.50 |     +4.50 |    +12.00 |    +12.00 |
-Village Voice                  | 2    |     -4.50 |     -4.50 |     -6.50 |     -6.50 |
-GameReviewer                   | 2    |    -12.50 |    -12.50 |     -6.00 |     -6.00 |
-GBA Central                    | 2    |     -1.50 |     -1.50 |    +14.50 |    +14.50 |
-Pocket Games                   | 2    |     -8.00 |     -8.00 |    -10.50 |    -10.50 |
-Sports Gaming Network          | 2    |     +2.00 |     +2.00 |    +21.50 |    +21.50 |
-GamePen                        | 2    |     -8.50 |     -8.50 |     +5.50 |     +5.50 |
-Play (Poland)                  | 2    |     -7.00 |     -7.00 |     -2.50 |     -2.50 |
-GamePower                      | 1    |     +5.00 |     +5.00 |     +9.00 |     +9.00 |
-CheckOut                       | 1    |     +5.00 |     +5.00 |     +9.00 |     +9.00 |
-Daily Radar                    | 1    |     +5.00 |     +5.00 |     +9.00 |     +9.00 |
-Quandary                       | 1    |     +5.00 |     +5.00 |     +9.00 |     +9.00 |
-Antagonist                     | 1    |     +3.00 |     +3.00 |     +7.00 |     +7.00 |
-CNET Gamecenter                | 1    |     -5.00 |     -5.00 |     -1.00 |     -1.00 |
-Spank!                         | 1    |     -5.00 |     -5.00 |     -1.00 |     -1.00 |
-IndieWire                      | 1    |    -13.00 |    -13.00 |    -10.00 |    -10.00 |
-Glixel                         | 1    |    -17.00 |    -17.00 |     -9.00 |     -9.00 |
-Official PlayStation Magazine  | 1    |     -5.00 |     -5.00 |     -2.00 |     -2.00 |
-Gamezebo                       | 1    |     -4.00 |     -4.00 |     +2.00 |     +2.00 |
-GMW3                           | 1    |     +7.00 |     +7.00 |     +9.00 |     +9.00 |
-Wired UK                       | 1    |     +3.00 |     +3.00 |    +11.00 |    +11.00 |
-PS3bloggen.se                  | 1    |     +4.00 |     +4.00 |    +11.00 |    +11.00 |
-PSFocus                        | 1    |     +1.00 |     +1.00 |     +8.00 |     +8.00 |
-Ten Ton Hammer                 | 1    |     -3.00 |     -3.00 |     +7.00 |     +7.00 |
-High-Def Digest                | 1    |     +2.00 |     +2.00 |    +17.00 |    +17.00 |
-Examiner                       | 1    |     +2.00 |     +2.00 |    +17.00 |    +17.00 |
-ICXM                           | 1    |     +8.00 |     +8.00 |    +24.00 |    +24.00 |
-Games Domain                   | 1    |     +8.00 |     +8.00 |    +10.00 |    +10.00 |
-Nintendorks                    | 1    |     -2.00 |     -2.00 |     +0.00 |     +0.00 |
-Bit-Gamer                      | 1    |     +1.00 |     +1.00 |    +13.00 |    +13.00 |
-PC Games (Russia)              | 1    |     +1.00 |     +1.00 |    +13.00 |    +13.00 |
-Frictionless Insight           | 1    |     +4.00 |     +4.00 |     +9.00 |     +9.00 |
-VIA Gamers Arena               | 1    |     +2.00 |     +2.00 |     +7.00 |     +7.00 |
-Absolute Playstation           | 1    |     +0.00 |     +0.00 |     +9.00 |     +9.00 |
-Loaded Inc                     | 1    |     -7.00 |     -7.00 |     +1.00 |     +1.00 |
-BBC Sport                      | 1    |     -8.00 |     -8.00 |    +20.00 |    +20.00 |
-DS Central                     | 1    |    +12.00 |    +12.00 |    -14.00 |    -14.00 |
-Cloudchaser                    | 1    |     -7.00 |     -7.00 |    -25.00 |    -25.00 |
-Cheat Code Central Platinum    | 1    |     +5.00 |     +5.00 |    -19.00 |    -19.00 |
-AltGaming                      | 1    |     -1.00 |     -1.00 |     -3.00 |     -3.00 |
-PSW Magazine UK                | 1    |     -4.00 |     -4.00 |     -3.00 |     -3.00 |
-Pregaming                      | 1    |     +8.00 |     +8.00 |     +8.00 |     +8.00 |
-PSM2 Magazine UK               | 1    |     -5.00 |     -5.00 |    -11.00 |    -11.00 |
-Pure Magazine UK               | 1    |     +7.00 |     +7.00 |     +9.00 |     +9.00 |
-Operation Sports               | 1    |     +4.00 |     +4.00 |    +86.00 |    +86.00 |
-GameCube Advanced              | 1    |    +16.00 |    +16.00 |    +16.00 |    +16.00 |
-Pelaaja (Finland)              | 1    |    -14.00 |    -14.00 |    -14.00 |    -14.00 |
-=======================================================================================
+========================================================================================================================
+Legend: |x|Avg = average absolute bias, |x|Med = median absolute bias, SD = standard deviation
+------------------------------------------------------------------------------------------------------------------------
+Outlet                         | Rev  |       Bias vs PRO        |     Bias vs PLAYERS      |
+                               |      | |x|Avg | |x|Med |     SD | |x|Avg | |x|Med |     SD |
+------------------------------------------------------------------------------------------------------------------------
+IGN                            | 256  |   5.12 |   4.00 |   6.83 |  17.44 |  12.00 |  19.84 |
+GameSpot                       | 214  |   6.11 |   4.50 |   7.72 |  16.29 |  11.00 |  20.15 |
+Multiplayer.it                 | 181  |   6.17 |   4.00 |   7.74 |  22.96 |  15.00 |  21.88 |
+Game Informer                  | 180  |   5.47 |   4.00 |   7.14 |  19.96 |  13.00 |  19.98 |
+Everyeye.it                    | 165  |   5.58 |   4.00 |   6.76 |  23.52 |  17.00 |  20.41 |
+Vandal                         | 154  |   4.88 |   4.00 |   5.43 |  22.08 |  15.00 |  20.19 |
+GamingTrend                    | 142  |   7.37 |   5.00 |   9.78 |  20.21 |  11.50 |  21.27 |
+SpazioGames                    | 139  |   5.65 |   4.00 |   7.31 |  21.30 |  15.00 |  19.97 |
+GamesRadar+                    | 138  |   7.19 |   6.00 |   9.03 |  20.33 |  15.00 |  22.67 |
+Metro GameCentral              | 134  |   9.38 |   7.00 |   9.20 |  15.34 |   9.00 |  20.80 |
+Hardcore Gamer                 | 133  |   7.32 |   6.00 |   9.59 |  22.24 |  15.00 |  22.88 |
+Worth Playing                  | 131  |   5.52 |   4.00 |   7.79 |  15.96 |  10.00 |  18.11 |
+COGconnected                   | 128  |   6.67 |   5.00 |   8.00 |  24.35 |  18.00 |  20.18 |
+Edge Magazine                  | 127  |   8.84 |   6.00 |   9.29 |  14.43 |  11.00 |  18.28 |
+IGN Italia                     | 124  |   5.73 |   5.00 |   7.04 |  24.44 |  17.00 |  20.89 |
+Jeuxvideo.com                  | 122  |   5.48 |   4.00 |   7.35 |  26.26 |  21.50 |  22.15 |
+Eurogamer                      | 120  |  10.88 |   8.00 |  12.76 |  15.31 |  11.00 |  20.09 |
+Gaming Age                     | 115  |  10.06 |   7.00 |  13.65 |  20.97 |  14.00 |  22.30 |
+Meristation                    | 114  |   5.05 |   4.00 |   6.13 |  22.28 |  14.50 |  20.71 |
+Destructoid                    | 111  |   6.77 |   6.00 |   8.47 |  17.88 |  11.00 |  18.92 |
+Gameblog.fr                    | 109  |   7.95 |   7.00 |   9.76 |  20.43 |  14.00 |  21.24 |
+Games.cz                       | 108  |   8.05 |   5.50 |   9.64 |  17.41 |  13.00 |  17.43 |
+TheSixthAxis                   | 108  |   7.54 |   6.00 |  10.40 |  20.61 |  15.00 |  20.18 |
+Impulsegamer                   | 107  |   8.04 |   6.00 |   9.77 |  28.07 |  22.00 |  21.15 |
+The Games Machine              | 107  |   6.36 |   5.00 |   6.21 |  28.51 |  21.50 |  22.30 |
+Game Revolution                | 107  |   7.72 |   5.00 |   9.68 |  15.14 |   9.00 |  20.87 |
+God is a Geek                  | 106  |   7.65 |   7.00 |   6.72 |  27.51 |  22.50 |  19.28 |
+Gaming Nexus                   | 105  |   7.19 |   5.00 |   9.28 |  20.47 |  14.00 |  19.24 |
+Cheat Code Central             | 104  |   6.71 |   4.00 |   9.11 |  16.67 |  11.00 |  19.43 |
+CD-Action                      | 103  |   6.42 |   4.00 |   8.72 |  17.83 |  12.00 |  18.14 |
+PC Gamer                       | 100  |   5.95 |   4.00 |   8.51 |  19.25 |  14.00 |  20.85 |
+GameOver.gr                    | 100  |   6.35 |   5.00 |   7.87 |  20.42 |  14.50 |  20.08 |
+Hobby Consolas                 | 97   |   7.19 |   6.00 |   6.66 |  27.84 |  20.00 |  21.18 |
+CGMagazine                     | 95   |   8.14 |   7.00 |  10.36 |  22.54 |  17.00 |  19.57 |
+Shacknews                      | 93   |   8.28 |   7.00 |  10.78 |  22.65 |  19.00 |  20.18 |
+Gamer.nl                       | 93   |   5.31 |   4.00 |   6.73 |  18.70 |  11.00 |  18.88 |
+Push Square                    | 90   |   7.11 |   6.00 |   8.52 |  22.99 |  15.50 |  20.40 |
+GameCritics                    | 89   |  11.85 |   9.00 |  13.17 |  15.02 |  12.00 |  19.22 |
+GRYOnline.pl                   | 86   |   5.79 |   4.00 |   7.35 |  19.28 |  14.00 |  16.63 |
+Digital Chumps                 | 85   |   8.71 |   7.00 |   7.96 |  29.46 |  26.00 |  21.54 |
+Twinfinite                     | 85   |   7.47 |   6.00 |   9.84 |  26.28 |  19.00 |  22.03 |
+DualShockers                   | 84   |   7.21 |   5.00 |   9.81 |  22.50 |  18.00 |  19.46 |
+Gamer.no                       | 84   |   9.31 |   6.00 |  12.14 |  17.79 |  13.50 |  20.09 |
+GamingBolt                     | 80   |   7.80 |   6.00 |   9.86 |  21.21 |  15.50 |  19.04 |
+GameStar                       | 79   |   6.52 |   5.00 |   7.92 |  23.35 |  20.00 |  18.98 |
+PC Games                       | 79   |   5.48 |   5.00 |   6.92 |  20.44 |  14.00 |  19.59 |
+Screen Rant                    | 79   |   9.56 |   7.00 |  12.97 |  25.09 |  18.00 |  24.09 |
+IGN Spain                      | 78   |   5.65 |   4.00 |   7.02 |  21.51 |  16.00 |  18.70 |
+VideoGamer                     | 78   |   6.31 |   5.00 |   8.24 |  15.00 |  11.00 |  18.99 |
+PlayStation Universe           | 76   |   6.24 |   5.00 |   7.76 |  24.71 |  18.00 |  20.35 |
+4P.de                          | 74   |   5.28 |   4.00 |   7.03 |  18.88 |  14.00 |  19.50 |
+Checkpoint Gaming              | 74   |   6.45 |   5.00 |   8.47 |  21.57 |  18.00 |  18.33 |
+TheGamer                       | 72   |   8.71 |   6.00 |  11.78 |  24.75 |  16.50 |  23.95 |
+Eurogamer Italy                | 72   |   6.04 |   5.00 |   7.41 |  21.07 |  11.00 |  21.08 |
+Guardian                       | 72   |   9.86 |   7.00 |  12.40 |  22.46 |  15.00 |  20.46 |
+GameZone                       | 72   |   6.44 |   3.00 |   9.01 |  14.65 |  10.00 |  16.77 |
+XGN                            | 70   |   5.70 |   4.00 |   7.88 |  20.70 |  14.50 |  21.18 |
+Atomix                         | 70   |   6.56 |   5.00 |   7.72 |  27.94 |  23.00 |  20.51 |
+JeuxActu                       | 70   |   5.60 |   5.00 |   7.45 |  24.69 |  16.00 |  22.92 |
+Press Start Australia          | 69   |   6.04 |   5.00 |   7.32 |  22.74 |  18.00 |  18.24 |
+Wccftech                       | 69   |   6.57 |   6.00 |   8.45 |  25.88 |  20.00 |  22.28 |
+PLAY! Zine                     | 69   |   8.64 |   4.00 |  11.67 |  21.30 |  14.00 |  20.16 |
+PlaySense                      | 69   |   6.25 |   5.00 |   8.17 |  22.52 |  16.00 |  19.05 |
+IGN France                     | 66   |   6.24 |   5.00 |   7.92 |  19.98 |  14.00 |  18.18 |
+Games Master UK                | 66   |   6.17 |   3.00 |   9.14 |  16.12 |   9.00 |  18.86 |
+Digital Trends                 | 66   |   8.71 |   7.00 |  10.47 |  24.27 |  17.00 |  23.10 |
+ZTGD                           | 66   |   5.52 |   4.00 |   7.38 |  13.70 |  11.00 |  13.22 |
+Areajugones                    | 65   |   7.05 |   6.00 |   6.69 |  25.58 |  18.00 |  20.64 |
+GamePro                        | 65   |   6.75 |   6.00 |   7.92 |  13.75 |  11.00 |  13.93 |
+Game Rant                      | 64   |   8.22 |   7.00 |  10.64 |  23.94 |  19.00 |  21.20 |
+Power Unlimited                | 64   |   5.39 |   5.00 |   7.17 |  21.81 |  16.00 |  18.53 |
+games(TM)                      | 64   |   7.38 |   5.00 |   9.59 |  12.84 |   8.50 |  17.50 |
+GameSpy                        | 64   |   6.67 |   5.00 |   8.80 |  13.02 |  10.50 |  17.31 |
+3DJuegos                       | 63   |   5.21 |   3.00 |   6.81 |  23.97 |  11.00 |  22.85 |
+Gamersky                       | 62   |   5.74 |   4.00 |   6.26 |  26.18 |  19.50 |  21.70 |
+DarkStation                    | 62   |   5.52 |   5.00 |   5.98 |  16.26 |  10.00 |  19.62 |
+But Why Tho?                   | 60   |   9.40 |   6.50 |  12.23 |  23.33 |  22.50 |  18.73 |
+LEVEL (Czech Republic)         | 59   |  10.02 |   7.00 |  12.69 |  16.37 |  12.00 |  16.20 |
+PlayStation LifeStyle          | 59   |   6.83 |   5.00 |   7.88 |  27.42 |  19.00 |  22.15 |
+LevelUp                        | 58   |   5.95 |   5.00 |   7.45 |  26.72 |  19.50 |  20.54 |
+Softpedia                      | 57   |   7.25 |   6.00 |   8.28 |  24.91 |  22.00 |  20.29 |
+Noisy Pixel                    | 57   |   6.91 |   5.00 |   8.36 |  20.43 |  17.50 |  18.76 |
+GameSpew                       | 57   |   5.77 |   4.00 |   6.84 |  21.14 |  17.00 |  17.47 |
+Game Over Online               | 57   |   4.60 |   3.00 |   6.25 |  13.30 |   8.00 |  15.52 |
+GAMES.CH                       | 56   |   5.88 |   5.00 |   5.57 |  25.73 |  20.00 |  17.76 |
+Gamereactor UK                 | 56   |   7.30 |   6.00 |   9.45 |  18.82 |  15.00 |  16.07 |
+We Got This Covered            | 56   |  10.21 |   8.00 |  13.38 |  25.41 |  18.00 |  23.57 |
+GameGrin                       | 55   |   9.53 |   7.00 |  12.42 |  22.26 |  16.50 |  18.83 |
+Vgames                         | 54   |   6.78 |   5.00 |   8.87 |  19.74 |  14.50 |  16.24 |
+Cubed3                         | 53   |  10.19 |   7.00 |  12.04 |  16.81 |  12.00 |  20.72 |
+New Game Network               | 53   |   7.32 |   6.00 |   7.09 |  23.53 |  15.00 |  24.84 |
+SECTOR.sk                      | 52   |   6.04 |   4.00 |   8.46 |  21.62 |  19.00 |  16.02 |
+TechRadar Gaming               | 52   |   8.29 |   5.50 |  10.75 |  19.56 |  14.50 |  18.18 |
+Digitally Downloaded           | 51   |  11.63 |   8.00 |  15.99 |  23.86 |  18.00 |  22.73 |
+Armchair Empire                | 51   |   5.00 |   4.00 |   6.58 |   8.88 |   7.00 |   8.25 |
+G4 TV                          | 51   |   7.49 |   6.00 |   8.73 |  13.46 |  12.00 |  15.80 |
+1UP                            | 51   |   7.27 |   5.00 |   9.78 |  13.39 |  11.00 |  16.38 |
+MGG                            | 50   |   5.86 |   5.00 |   7.80 |  24.10 |  16.00 |  22.61 |
+BaziCenter                     | 50   |   6.04 |   5.00 |   8.11 |  23.58 |  16.50 |  20.68 |
+Merlin'in Kazanı (Turkey)      | 50   |   4.12 |   3.00 |   5.50 |  23.04 |  12.00 |  21.81 |
+Thunderbolt                    | 50   |   6.18 |   5.00 |   7.94 |  11.08 |  10.50 |  13.26 |
+Slant Magazine                 | 49   |  12.55 |   7.00 |  13.62 |  13.80 |  13.00 |  16.13 |
+Gamers' Temple                 | 49   |   6.06 |   4.00 |   8.46 |  20.43 |  14.00 |  23.04 |
+GamePro Germany                | 49   |   5.10 |   3.00 |   7.33 |  21.76 |  18.00 |  18.01 |
+Eurogamer Germany              | 48   |   8.73 |   6.00 |  11.04 |  20.21 |  15.00 |  18.86 |
+WellPlayed                     | 48   |   6.17 |   5.00 |   8.13 |  21.81 |  18.00 |  17.49 |
+AceGamez                       | 48   |   6.46 |   5.00 |   9.52 |  13.35 |  11.00 |  16.15 |
+PCGamesN                       | 47   |   6.70 |   5.00 |   8.39 |  22.15 |  19.00 |  20.14 |
+Malditos Nerds                 | 47   |   7.00 |   6.00 |   9.10 |  19.81 |  12.00 |  20.57 |
+Oyungezer                      | 46   |   5.11 |   4.00 |   6.97 |  18.57 |  14.00 |  18.39 |
+Attack of the Fanboy           | 46   |   9.24 |   6.00 |  12.18 |  26.39 |  19.00 |  23.33 |
+Playstation Official Magazine  | 46   |   5.87 |   5.00 |   7.58 |  26.80 |  15.00 |  23.96 |
+Siliconera                     | 45   |   8.36 |   6.00 |  11.19 |  17.84 |  14.50 |  18.91 |
+VGC                            | 45   |  10.38 |   7.00 |  13.45 |  23.18 |  18.00 |  21.32 |
+Dexerto                        | 45   |   9.22 |   6.00 |  11.31 |  18.91 |  14.00 |  18.61 |
+RPG Fan                        | 45   |   7.20 |   6.00 |   8.92 |  16.29 |  12.00 |  17.67 |
+TierraGamer                    | 45   |   6.40 |   5.00 |   7.35 |  25.76 |  21.00 |  18.46 |
+Yahoo!                         | 45   |   5.89 |   5.00 |   7.07 |  11.64 |  11.00 |  11.21 |
+Pelit (Finland)                | 44   |   6.07 |   3.00 |   8.79 |  14.30 |   7.00 |  15.93 |
+PSX Brasil                     | 43   |   6.79 |   6.00 |   6.38 |  27.07 |  23.50 |  17.10 |
+Gamestyle                      | 43   |   9.12 |   5.00 |  12.16 |  14.40 |  11.00 |  19.23 |
+IGN Adria                      | 42   |   7.00 |   5.00 |  10.01 |  21.93 |  18.00 |  18.94 |
+Hey Poor Player                | 42   |   9.57 |   7.50 |  11.80 |  16.15 |   8.00 |  17.87 |
+Telegraph                      | 42   |   6.79 |   6.00 |   8.31 |  18.00 |  11.00 |  19.40 |
+GameWatcher                    | 41   |   7.07 |   4.00 |  10.63 |  19.88 |  13.00 |  21.00 |
+GAMINGbible                    | 41   |   8.07 |   6.00 |   9.45 |  19.90 |  14.00 |  16.42 |
+GLHF on Sports Illustrated     | 41   |   8.44 |   6.00 |  10.51 |  17.73 |  14.00 |  16.58 |
+GameShark                      | 41   |   7.34 |   6.00 |   9.44 |  15.44 |  12.00 |  20.03 |
+MMORPG.com                     | 40   |   5.45 |   4.00 |   7.12 |  21.18 |  16.50 |  19.59 |
+Finger Guns                    | 40   |   8.65 |   7.00 |  10.26 |  17.43 |  16.50 |  13.37 |
+PALGN                          | 40   |   5.75 |   4.00 |   8.55 |  11.80 |   8.00 |  16.62 |
+Player 2                       | 39   |   8.56 |   7.00 |  10.50 |  26.85 |  23.00 |  19.33 |
+Eurogamer Poland               | 39   |   8.23 |   6.00 |   9.80 |  15.49 |  11.00 |  16.10 |
+Het Nieuwsblad                 | 39   |  12.56 |  10.00 |  14.96 |  20.51 |  16.00 |  21.45 |
+NME                            | 39   |  11.31 |  10.00 |  13.66 |  23.15 |  17.00 |  22.02 |
+GameSkinny                     | 39   |   6.90 |   5.00 |   9.30 |  21.85 |  16.00 |  18.46 |
+Game Chronicles                | 39   |   5.49 |   4.00 |   6.47 |  12.90 |  10.00 |  14.65 |
+Play Magazine                  | 39   |   8.62 |   5.00 |  13.10 |  14.33 |  11.00 |  14.95 |
+Gamers Heroes                  | 38   |   9.34 |   7.00 |  11.15 |  21.39 |  18.00 |  15.62 |
+Critical Hit                   | 38   |   5.08 |   3.00 |   6.36 |  22.55 |  10.50 |  22.20 |
+VG247                          | 38   |   7.66 |   7.00 |   8.71 |  24.68 |  19.50 |  18.99 |
+GameTrailers                   | 38   |   3.26 |   2.00 |   4.93 |  10.05 |   8.00 |   7.98 |
+Electronic Gaming Monthly      | 38   |   4.87 |   3.50 |   7.05 |  12.55 |  10.00 |  15.02 |
+Inverse                        | 37   |   7.70 |   7.00 |   9.14 |  18.78 |  17.00 |  15.56 |
+AusGamers                      | 37   |   8.00 |   6.00 |  11.01 |  20.00 |  14.00 |  21.62 |
+GGRecon                        | 37   |   9.08 |   7.00 |  11.22 |  22.81 |  19.00 |  19.01 |
+MeuPlayStation                 | 37   |   5.78 |   5.00 |   6.01 |  26.24 |  23.00 |  16.84 |
+NZGamer                        | 37   |   4.86 |   3.00 |   6.28 |  13.95 |   9.00 |  14.82 |
+INVEN                          | 36   |   5.28 |   4.00 |   5.58 |  22.92 |  16.50 |  17.52 |
+Stevivor                       | 36   |   9.22 |   6.00 |  11.87 |  19.44 |  13.00 |  20.23 |
+ComicBook                      | 35   |   8.77 |   7.00 |  11.08 |  23.89 |  19.00 |  20.32 |
+Eurogamer Portugal             | 35   |   8.86 |   6.00 |  10.57 |  14.71 |  11.00 |  15.16 |
+GamesHub                       | 35   |   7.91 |   6.00 |  10.04 |  22.91 |  20.00 |  17.38 |
+GameSpace                      | 34   |   7.50 |   5.00 |  10.64 |  25.91 |  15.00 |  24.13 |
+Gameplanet                     | 34   |   4.35 |   4.00 |   5.35 |  11.26 |   9.00 |  12.31 |
+Daily Star                     | 34   |  11.38 |  12.00 |  12.23 |  26.56 |  19.50 |  19.83 |
+LaPS4                          | 34   |   5.68 |   4.50 |   5.97 |  25.53 |  17.50 |  22.35 |
+Total Video Games              | 34   |   6.59 |   5.00 |   8.09 |   8.97 |   9.00 |   9.15 |
+Gamepressure                   | 33   |   7.00 |   6.00 |   9.03 |  18.27 |  13.00 |  17.34 |
+Video Chums                    | 33   |   5.82 |   5.00 |   7.65 |  15.91 |   9.50 |  17.49 |
+GameMAG                        | 33   |   9.33 |   7.00 |  10.02 |  18.45 |  15.00 |  18.83 |
+PLAY                           | 33   |   9.36 |   8.00 |  11.43 |  19.94 |  15.00 |  20.39 |
+Official Xbox Magazine         | 33   |   6.52 |   6.00 |   8.43 |  12.27 |  12.00 |  12.35 |
+GamersRD                       | 32   |  12.66 |  11.00 |  16.94 |  23.91 |  18.50 |  22.95 |
+Windows Central                | 32   |   7.38 |   7.00 |   8.21 |  25.22 |  21.50 |  22.66 |
+Riot Pixels                    | 32   |  13.25 |  14.00 |  12.11 |  13.47 |  10.00 |  18.61 |
+USgamer                        | 32   |   5.72 |   3.50 |   6.97 |  19.22 |  11.00 |  20.64 |
+Digital Spy                    | 32   |   6.66 |   6.00 |   8.14 |  15.39 |  12.00 |  12.73 |
+The Jimquisition               | 32   |  14.31 |  11.50 |  14.51 |  12.94 |   8.50 |  16.64 |
+Hooked Gamers                  | 31   |   8.94 |   8.00 |   9.96 |  24.58 |  22.00 |  16.39 |
+Gfinity                        | 31   |  10.68 |   7.00 |  13.80 |  18.81 |  15.00 |  19.27 |
+Easy Allies                    | 31   |   6.03 |   4.00 |   9.01 |  15.58 |  11.00 |  15.26 |
+Trusted Reviews                | 31   |   5.42 |   3.00 |   7.25 |  24.45 |  12.00 |  23.61 |
+Computer and Video Games       | 31   |   3.32 |   3.00 |   4.73 |   9.16 |   7.00 |   9.97 |
+PSX Extreme                    | 31   |   3.68 |   3.00 |   4.63 |  15.26 |   9.00 |  15.53 |
+IGN Portugal                   | 30   |   6.57 |   5.50 |   8.22 |  21.00 |  16.00 |  18.62 |
+IGN Japan                      | 30   |   6.97 |   6.00 |   8.95 |  20.40 |  12.00 |  22.43 |
+ActionTrip                     | 30   |   3.90 |   2.00 |   6.46 |   9.73 |   5.50 |   9.74 |
+AtomicGamer                    | 30   |   3.90 |   1.50 |   7.01 |   9.80 |   8.00 |   8.93 |
+Jolt Online Gaming UK          | 29   |   5.45 |   3.00 |   8.56 |  12.86 |   8.00 |  18.52 |
+InsideGamer.nl                 | 29   |   3.72 |   2.00 |   4.60 |  14.79 |   6.00 |  18.49 |
+Forbes                         | 29   |   6.62 |   5.00 |   7.36 |  38.24 |  38.00 |  27.55 |
+Ragequit.gr                    | 28   |   6.39 |   5.00 |   7.10 |  26.50 |  21.00 |  20.36 |
+The Enemy                      | 28   |   8.57 |   6.50 |  10.41 |  21.75 |  15.50 |  21.50 |
+TrueGaming                     | 28   |   4.79 |   4.00 |   5.64 |  25.04 |  15.50 |  23.06 |
+Gamer 2.0                      | 28   |   3.50 |   2.00 |   5.52 |   7.96 |   7.00 |   8.18 |
+GameCrate                      | 27   |   7.00 |   5.00 |   9.45 |  22.07 |  17.00 |  17.95 |
+App Trigger                    | 27   |   8.67 |   6.00 |  11.69 |  26.37 |  18.00 |  21.68 |
+NintendoWorldReport            | 27   |   5.26 |   4.00 |   7.15 |  14.96 |  10.00 |  18.51 |
+4Players.de                    | 27   |   7.85 |   5.00 |  10.85 |  24.15 |  16.00 |  23.54 |
+Game World Navigator Magazine  | 26   |   5.96 |   4.00 |   7.57 |  13.27 |   7.00 |  15.93 |
+Play.tm                        | 26   |   3.65 |   2.00 |   6.00 |   8.31 |   7.00 |   8.02 |
+GamerNode                      | 26   |   3.85 |   2.50 |   5.20 |  12.35 |   9.00 |  17.46 |
+Post Arcade (National Post)    | 26   |   4.31 |   4.00 |   5.04 |  15.58 |  10.00 |  14.99 |
+Giant Bomb                     | 26   |   8.46 |   6.00 |  10.77 |  12.19 |  11.00 |   9.87 |
+Kombo                          | 26   |   4.15 |   2.50 |   6.28 |  10.65 |  10.00 |   8.26 |
+TeamXbox                       | 26   |   4.38 |   3.00 |   5.95 |   8.50 |   9.00 |   5.82 |
+Gameliner                      | 25   |   9.04 |   7.00 |  12.43 |  21.96 |  22.00 |  16.64 |
+GamesBeat                      | 25   |   5.32 |   4.00 |   6.86 |  16.04 |  10.00 |  18.60 |
+Official Xbox Magazine UK      | 25   |   6.24 |   4.00 |   8.61 |   9.32 |   7.00 |  10.13 |
+My Gamer                       | 25   |   4.32 |   4.00 |   4.79 |   6.64 |   5.00 |   9.22 |
+KeenGamer                      | 24   |   5.88 |   4.50 |   5.68 |  21.17 |  17.50 |  15.01 |
+TotalGames.net                 | 24   |   7.42 |   4.00 |  10.66 |  12.00 |   8.00 |  13.39 |
+Games Radar                    | 24   |   4.54 |   3.50 |   6.61 |   9.04 |   8.00 |   8.91 |
+The Sydney Morning Herald      | 24   |   5.62 |   5.00 |   5.64 |  18.92 |  11.00 |  16.84 |
+DarkZero                       | 24   |   6.21 |   4.50 |   7.78 |  12.79 |  11.00 |  13.44 |
+The Digital Fix                | 23   |   6.74 |   6.00 |   8.18 |  14.61 |   9.00 |  18.20 |
+PC Invasion                    | 23   |   6.70 |   5.00 |   8.88 |  21.04 |  16.00 |  17.02 |
+EGM                            | 23   |   6.87 |   3.00 |   9.19 |  21.78 |  15.00 |  20.97 |
+Extreme Gamer                  | 23   |   5.35 |   4.00 |   6.83 |  10.48 |   9.00 |   7.07 |
+PCMag                          | 22   |   6.50 |   5.50 |   7.52 |  19.05 |  12.00 |  19.89 |
+Washington Post                | 22   |   6.82 |   6.00 |   8.45 |  13.82 |  11.00 |  16.87 |
+PGNx Media                     | 22   |   5.18 |   4.00 |   5.59 |  12.32 |  10.00 |   9.02 |
+Level7.nu                      | 22   |   7.91 |   5.00 |   7.97 |   9.55 |   9.00 |  12.80 |
+GameDaily                      | 22   |   5.77 |   5.00 |   6.35 |   9.05 |   8.00 |  12.56 |
+The A.V. Club                  | 22   |   5.27 |   4.00 |   7.49 |  12.68 |  11.00 |  11.60 |
+Boomtown                       | 22   |   5.41 |   5.00 |   5.75 |   7.32 |   8.50 |   8.71 |
+X-ONE Magazine UK              | 22   |   7.18 |   5.50 |   9.48 |  14.59 |  11.50 |  18.04 |
+eToychest                      | 22   |   7.86 |   4.00 |  12.11 |  13.14 |   9.00 |  16.79 |
+IGN Deutschland                | 21   |   5.52 |   5.00 |   6.72 |  14.90 |  12.00 |  12.48 |
+Voxel                          | 21   |   8.48 |   8.00 |   8.95 |  25.38 |  26.00 |  17.41 |
+Gamekult                       | 21   |  14.43 |  14.00 |   9.65 |  11.52 |   8.00 |  15.16 |
+The New York Times             | 21   |   9.48 |   7.00 |  10.48 |  11.48 |   6.00 |  17.20 |
+XboxAddict                     | 21   |   4.14 |   3.00 |   5.16 |  12.48 |  11.00 |   7.03 |
+M3                             | 21   |   6.52 |   4.00 |   8.34 |  23.38 |  19.00 |  24.18 |
+The Loadout                    | 21   |   7.24 |   5.00 |   8.43 |  18.05 |  13.00 |  16.96 |
+RPGamer                        | 21   |   6.24 |   4.00 |   7.76 |  11.15 |  11.00 |   9.32 |
+Da Gameboyz                    | 21   |   4.33 |   3.00 |   6.56 |   9.10 |   7.00 |   9.53 |
+Next Level Gaming              | 21   |   5.00 |   4.00 |   6.05 |  10.52 |   7.00 |  10.47 |
+netjak                         | 21   |   8.52 |   6.00 |   9.49 |  10.00 |   6.00 |  14.51 |
+IGN Benelux                    | 20   |   3.40 |   2.50 |   4.15 |  19.90 |  17.50 |  13.77 |
+Movies Games and Tech          | 20   |   8.10 |   5.00 |  10.93 |  15.50 |  12.00 |  15.51 |
+Pocket-lint                    | 20   |   7.55 |   5.00 |  10.14 |  17.15 |  15.00 |  16.46 |
+GMR Magazine                   | 20   |   7.25 |   5.00 |  10.40 |  11.90 |   9.00 |  17.25 |
+Gaming Target                  | 20   |   3.90 |   3.50 |   4.52 |  10.40 |   9.00 |   9.86 |
+Play UK                        | 20   |   3.75 |   1.50 |   6.12 |  12.25 |   9.00 |  13.08 |
+Xbox Achievements              | 20   |   4.15 |   3.00 |   5.77 |  10.60 |   9.00 |   7.74 |
+Gamer's Hell                   | 20   |   4.95 |   4.00 |   7.07 |   9.60 |   5.50 |  12.97 |
+Nintendo Life                  | 19   |   6.79 |   6.00 |   7.04 |  15.21 |  11.00 |  20.37 |
+Loot Level Chill               | 19   |   6.74 |   6.00 |   5.70 |  17.94 |  16.00 |  13.13 |
+PlayStation Country            | 19   |   5.95 |   4.00 |   8.32 |  26.63 |  19.00 |  22.06 |
+Gamezilla!                     | 19   |   4.11 |   2.00 |   5.99 |   8.84 |   7.00 |   8.14 |
+GamingExcellence               | 19   |   5.21 |   2.00 |   8.45 |  11.00 |   8.00 |  14.03 |
+WHAM! Gaming                   | 19   |   5.42 |   3.00 |   9.09 |   9.05 |   8.00 |  10.94 |
+Planet Xbox 360                | 19   |   6.32 |   5.00 |   8.36 |  13.00 |  11.00 |  10.31 |
+Console Gameworld              | 19   |   4.05 |   3.00 |   4.65 |  11.63 |   8.00 |  16.04 |
+Deeko                          | 19   |   5.63 |   4.00 |   7.70 |  11.89 |  10.00 |  14.06 |
+RPG Site                       | 18   |   5.83 |   4.50 |   7.29 |  12.89 |  12.00 |  12.68 |
+All Game Guide                 | 18   |   8.00 |   6.50 |   8.34 |   7.94 |   7.50 |  10.79 |
+Polygon                        | 18   |   8.17 |   6.00 |   9.13 |  16.89 |  11.00 |  20.22 |
+MondoXbox                      | 18   |   6.72 |   6.00 |   6.63 |  16.94 |  14.50 |  11.04 |
+Nintendojo                     | 18   |   8.83 |   5.00 |  12.91 |  15.83 |  12.00 |  19.36 |
+GameFocus                      | 18   |   3.11 |   2.50 |   4.05 |  13.17 |  10.50 |  14.31 |
+NTSC-uk                        | 18   |  10.67 |   6.00 |  12.30 |   8.83 |   8.00 |  11.49 |
+GIGA                           | 17   |   4.29 |   3.00 |   5.83 |  27.88 |  25.00 |  21.19 |
+IGN Brasil                     | 17   |   4.47 |   4.00 |   5.62 |  18.65 |  12.00 |  19.09 |
+Try Hard Guides                | 17   |  14.65 |  13.00 |  13.84 |  26.94 |  26.00 |  16.86 |
+Carole Quintaine               | 17   |   7.00 |   6.00 |   6.53 |  22.12 |  19.00 |  14.60 |
+Adrenaline Vault               | 17   |   8.41 |   5.00 |  11.49 |  10.94 |  10.00 |  12.84 |
+Playstation Official Magazine  | 17   |   5.82 |   5.00 |   6.53 |  12.41 |  11.00 |   7.80 |
+Console Monster                | 17   |   2.76 |   1.00 |   4.34 |   9.71 |   8.00 |   6.42 |
+Xbox World 360 Magazine UK     | 17   |   8.12 |   4.00 |  12.95 |  16.41 |   9.00 |  22.77 |
+Electric Playground            | 16   |   6.19 |   5.50 |   7.85 |   7.81 |   4.00 |  12.57 |
+Computer Games Magazine        | 16   |  10.81 |   7.50 |  12.81 |  15.62 |  13.50 |  18.24 |
+IC-Games                       | 16   |   3.12 |   2.00 |   2.70 |  10.38 |   9.50 |   7.27 |
+Nintendo Power                 | 16   |   6.00 |   3.50 |   7.34 |   7.62 |   5.50 |   9.22 |
+DailyGame                      | 16   |   5.25 |   4.00 |   6.32 |   7.69 |   7.50 |   7.51 |
+MS Xbox World                  | 16   |   6.75 |   5.00 |  10.09 |  12.56 |  10.00 |  13.43 |
+Official U.S. Playstation Mag  | 16   |   7.19 |   5.50 |   9.20 |  15.56 |  13.00 |  15.79 |
+Game8                          | 15   |   6.47 |   4.00 |   8.25 |  14.07 |  15.00 |  16.17 |
+PlayGround.ru                  | 15   |   7.07 |   2.00 |  13.90 |  30.87 |  35.00 |  21.69 |
+Gamers Europe                  | 15   |   6.13 |   4.00 |   6.53 |   6.20 |   4.00 |   9.03 |
+Gamereactor Sweden             | 15   |   6.93 |   6.00 |   8.47 |  13.33 |  11.00 |  14.16 |
+The Escapist                   | 15   |   6.47 |   5.00 |   7.83 |  12.53 |   9.00 |  18.05 |
+IGN AU                         | 15   |   2.47 |   1.00 |   3.93 |   8.33 |   7.00 |   6.35 |
+PSM Magazine                   | 15   |   5.27 |   5.00 |   5.21 |  17.20 |  12.00 |  13.35 |
+Gamereactor Denmark            | 14   |   4.93 |   4.50 |   5.66 |  13.79 |   9.00 |  16.77 |
+GamerFeed                      | 14   |   5.64 |   4.00 |   7.72 |   7.36 |   5.00 |  10.42 |
+XboxEra                        | 14   |   7.29 |   5.00 |   8.46 |  23.86 |  20.50 |  15.43 |
+SomosXbox                      | 14   |   9.36 |   7.50 |   8.74 |  26.29 |  23.00 |  13.40 |
+Gamervision                    | 14   |   3.43 |   2.00 |   4.11 |  15.50 |  11.00 |  17.15 |
+GamingXP                       | 14   |   3.07 |   3.00 |   3.23 |   7.71 |   6.00 |   8.91 |
+Xbox World Australia           | 14   |   3.43 |   3.50 |   4.26 |   7.71 |   8.00 |   4.94 |
+Into Liquid Sky                | 14   |   6.93 |   4.50 |   8.51 |  14.71 |   9.50 |  15.89 |
+GameBlast                      | 13   |   4.38 |   3.00 |   5.28 |  15.75 |  13.50 |  15.26 |
+Gamer's Pulse                  | 13   |   6.23 |   4.00 |   8.07 |   7.42 |   6.50 |   6.10 |
+BonusStage                     | 13   |   4.00 |   4.00 |   4.84 |   7.62 |   7.00 |   5.46 |
+TotalPlayStation               | 13   |   4.85 |   6.00 |   5.50 |  12.54 |   8.00 |  13.63 |
+PTGamers                       | 13   |   5.69 |   4.00 |   6.98 |  13.54 |  11.00 |  19.36 |
+GameNow                        | 13   |   6.77 |   6.00 |   7.36 |  16.92 |  14.00 |  17.07 |
+Maxim Online                   | 13   |   7.46 |   5.00 |   7.01 |  12.31 |   9.00 |  10.69 |
+Cinescape                      | 13   |   7.38 |   6.00 |  10.35 |  16.67 |  13.00 |  18.81 |
+Gamer Escape                   | 12   |   5.58 |   4.00 |   7.79 |  18.33 |  18.00 |  11.48 |
+Irish Independent              | 12   |   9.42 |   7.00 |  11.22 |  25.58 |  27.50 |  15.20 |
+NPR                            | 12   |   5.67 |   4.00 |   7.41 |  19.58 |  15.00 |  20.90 |
+Game Almighty                  | 12   |  10.25 |   4.00 |  17.31 |   9.08 |  10.00 |  11.39 |
+Eurogamer Spain                | 12   |   5.08 |   4.00 |   6.23 |  11.92 |  11.00 |   7.54 |
+MEGamers                       | 12   |   4.92 |   2.00 |   7.65 |  12.75 |  11.50 |  13.80 |
+Totally360                     | 12   |   6.58 |   4.50 |   9.19 |  11.92 |  10.00 |   9.51 |
+Digital Entertainment News     | 12   |   6.58 |   7.00 |   7.60 |  11.92 |  10.50 |  14.81 |
+This Is Game                   | 11   |   3.00 |   3.00 |   4.08 |  15.91 |  13.00 |  15.90 |
+PC PowerPlay                   | 11   |  10.64 |   8.00 |  11.51 |  13.00 |  13.00 |  14.38 |
+Dot Esports                    | 11   |   4.36 |   2.00 |   6.78 |  23.36 |  23.00 |  17.12 |
+GINX TV                        | 11   |   7.27 |   8.00 |   6.36 |  27.55 |  22.00 |  16.95 |
+Cincinnati Enquirer            | 11   |   6.36 |   6.00 |   7.03 |   8.91 |   9.00 |  10.88 |
+New York Daily News            | 11   |   5.82 |   5.00 |   7.21 |  23.73 |  12.00 |  24.47 |
+Nintendo Gamer                 | 11   |   8.09 |   5.00 |  11.08 |  24.09 |  23.00 |  31.97 |
+BigPond GameArena              | 11   |   4.18 |   5.00 |   4.20 |  11.73 |  11.00 |   6.02 |
+Cynamite                       | 11   |   4.18 |   4.00 |   5.10 |   9.82 |  11.00 |   7.20 |
+Talk Xbox                      | 11   |   3.27 |   2.00 |   3.38 |  12.27 |  11.00 |  12.29 |
+Maxi Consolas (Portugal)       | 11   |   4.36 |   4.00 |   4.22 |  14.64 |  12.00 |  11.90 |
+GameBiz                        | 11   |   3.55 |   2.00 |   4.97 |   9.73 |   6.00 |  13.09 |
+Gamer.tv                       | 11   |   7.55 |   4.00 |  10.39 |  16.45 |   9.00 |  18.23 |
+PSX Nation                     | 11   |  10.64 |   5.00 |  15.99 |  18.18 |  15.00 |  18.41 |
+Gamesurf                       | 10   |   5.20 |   4.50 |   5.77 |  16.30 |  14.50 |  12.16 |
+Nintendo Insider               | 10   |   7.50 |   5.00 |  10.39 |   9.00 |   8.50 |   9.55 |
+Generación Xbox                | 10   |   9.90 |   8.50 |   6.86 |  22.40 |  21.50 |   7.68 |
+Gamenikki                      | 10   |   7.80 |   4.50 |  10.52 |   5.90 |   6.00 |   7.07 |
+Gamereactor Finland            | 10   |  10.40 |   6.00 |  13.94 |  18.60 |  16.50 |  16.24 |
+Joystiq                        | 10   |   4.40 |   4.50 |   4.60 |  11.10 |  11.50 |   9.88 |
+IncGamers                      | 10   |   8.70 |   5.00 |  10.27 |   8.10 |   7.00 |   9.37 |
+IGN UK                         | 10   |   5.70 |   3.50 |   7.53 |  10.40 |   9.50 |   6.67 |
+Video Game Talk                | 10   |   7.90 |   7.00 |   9.24 |   9.20 |   9.00 |  11.08 |
+Xbox Nation Magazine           | 10   |   5.10 |   4.50 |   6.08 |  10.56 |  10.00 |  12.77 |
+Entertainment Weekly           | 10   |   9.60 |   7.00 |  11.52 |  16.70 |  14.50 |  18.16 |
+Inside Gamer Online            | 10   |   4.10 |   3.00 |   6.12 |   7.90 |   6.00 |   7.32 |
+XGP Gaming                     | 10   |   2.60 |   2.00 |   3.37 |   8.40 |   6.50 |   5.30 |
+VGPub                          | 10   |   3.20 |   3.00 |   3.34 |   7.90 |   9.00 |   5.60 |
+Pocket Tactics                 | 9    |   5.89 |   5.00 |   6.19 |  12.67 |   8.00 |  14.70 |
+Final Weapon                   | 9    |  18.78 |  13.00 |  17.25 |  10.43 |   9.00 |  14.19 |
+Vooks                          | 9    |   5.44 |   4.00 |   4.99 |  12.11 |  11.00 |   9.57 |
+Critical Hits                  | 9    |   4.44 |   4.00 |   4.89 |  16.78 |  15.00 |  14.54 |
+TheXboxHub                     | 9    |  13.11 |  10.00 |  13.06 |  22.78 |  22.00 |  11.59 |
+Cultured Vultures              | 9    |   7.44 |   5.00 |  10.79 |  18.56 |  17.00 |  15.84 |
+Switch Player                  | 9    |   6.78 |   4.00 |   9.68 |  12.56 |  12.00 |  13.02 |
+CPUGamer                       | 9    |   8.00 |   4.00 |  13.11 |   9.44 |   8.00 |  11.45 |
+Computer Games Online RO       | 9    |   5.00 |   4.00 |   6.58 |   5.78 |   5.00 |   5.91 |
+Pure Xbox                      | 9    |   6.44 |   6.00 |   9.32 |  13.67 |  14.00 |  10.14 |
+TrueAchievements               | 9    |   5.67 |   6.00 |   4.32 |  17.89 |  21.00 |   6.07 |
+The Mako Reactor               | 9    |   9.11 |   7.00 |   6.82 |  27.44 |  26.00 |  15.76 |
+Pocket Gamer UK                | 9    |   5.56 |   3.00 |   7.33 |  15.00 |  11.00 |  21.79 |
+Quarter to Three               | 9    |  21.11 |  13.00 |  24.18 |  19.00 |  14.00 |  26.63 |
+D+PAD Magazine                 | 9    |   4.89 |   5.00 |   4.70 |  10.56 |  11.00 |   6.41 |
+Official Nintendo Magazine UK  | 9    |   6.11 |   2.00 |   8.57 |  17.89 |   7.00 |  23.13 |
+GameTap                        | 9    |   4.44 |   4.00 |   5.00 |   8.78 |   9.00 |   3.67 |
+360 Gamer Magazine UK          | 9    |   8.44 |   6.00 |   7.29 |   9.00 |   7.00 |  11.90 |
+Game Power Australia           | 9    |   2.33 |   1.00 |   3.26 |   5.56 |   5.00 |   3.62 |
+Nintenderos                    | 8    |   9.50 |  10.50 |   9.82 |  15.25 |  12.50 |  17.64 |
+Combo Infinito                 | 8    |   2.88 |   2.00 |   4.09 |  17.12 |  12.50 |  17.00 |
+Cultura Geek                   | 8    |   5.25 |   3.50 |   7.38 |  22.75 |  18.00 |  23.37 |
+Restart.run                    | 8    |   9.25 |   7.50 |  12.28 |  17.71 |  13.00 |  21.73 |
+DBLTAP                         | 8    |   7.75 |   7.00 |   8.02 |   6.75 |   5.00 |   7.54 |
+FANDOM                         | 8    |   9.00 |   6.00 |  10.94 |  19.75 |  11.50 |  22.29 |
+Nintendo Force Magazine        | 8    |   4.62 |   4.00 |   5.55 |  10.12 |  11.50 |   4.12 |
+MGG Spain                      | 8    |   3.62 |   3.50 |   4.14 |  29.62 |  15.00 |  30.75 |
+Times Online                   | 8    |  10.38 |   6.00 |  13.62 |  18.50 |  15.00 |  13.44 |
+Gaming Illustrated             | 8    |   2.62 |   2.00 |   3.83 |   6.88 |   6.50 |   4.12 |
+PSM3 Magazine UK               | 8    |   5.38 |   1.50 |   9.75 |   9.62 |   8.50 |   8.70 |
+Gamer Limit                    | 8    |   4.75 |   3.50 |   6.63 |   9.00 |   8.00 |  11.08 |
+Gamers.at                      | 8    |   7.62 |   5.50 |  10.89 |   7.12 |   3.00 |  12.06 |
+RealGamer                      | 8    |   6.12 |   1.50 |  10.22 |  10.38 |   7.50 |  13.56 |
+WonderwallWeb                  | 8    |   5.88 |   3.00 |   6.64 |  14.62 |  13.00 |   6.12 |
+Nintendophiles                 | 8    |   8.25 |   4.50 |  10.93 |  11.25 |   9.50 |  14.21 |
+GameBrink                      | 8    |   4.50 |   3.50 |   5.39 |  11.75 |   5.00 |  16.46 |
+Gaming Horizon                 | 8    |   2.62 |   2.00 |   3.16 |   8.25 |   6.00 |   5.31 |
+3DAvenue                       | 8    |   7.38 |   6.00 |   9.77 |   8.88 |   6.00 |  11.49 |
+GameSpot AU                    | 8    |   2.50 |   1.00 |   3.58 |   6.50 |   4.50 |   5.97 |
+Nintenduo                      | 7    |   5.14 |   5.00 |   5.82 |   7.43 |   3.00 |  10.51 |
+The Daily Dot                  | 7    |   8.57 |   7.00 |   7.20 |  13.29 |  11.00 |  16.93 |
+Just Adventure                 | 7    |   5.00 |   5.00 |   3.91 |  10.57 |  12.00 |   5.06 |
+PC Gameworld                   | 7    |   2.86 |   3.00 |   3.64 |   3.14 |   3.00 |   4.26 |
+GamerArchive                   | 7    |   6.43 |   5.00 |   7.53 |   5.71 |   9.00 |   6.64 |
+GamesVillage.it                | 7    |   8.71 |   5.00 |  10.73 |  20.43 |  13.00 |  18.04 |
+Kill Screen                    | 7    |  17.71 |  22.00 |  17.55 |  23.71 |  12.00 |  33.60 |
+PC Gamer UK                    | 7    |   8.14 |   9.00 |  10.70 |  14.29 |   7.00 |  22.20 |
+Radio Times                    | 7    |   8.29 |   4.00 |  11.91 |  28.00 |  18.00 |  22.37 |
+Comicbook.com                  | 7    |   7.29 |   8.00 |   8.99 |  35.14 |  49.00 |  27.93 |
+Universo Nintendo              | 7    |   4.57 |   4.00 |   1.51 |  13.29 |  12.00 |   7.67 |
+Pure Nintendo                  | 7    |  11.86 |  13.00 |  12.14 |  16.14 |  12.00 |  17.14 |
+Machinima                      | 7    |   4.71 |   3.00 |   5.59 |  10.71 |   8.00 |   9.72 |
+Kikizo                         | 7    |   3.71 |   4.00 |   4.30 |   9.57 |  10.00 |   7.02 |
+Wired                          | 7    |   9.57 |   6.00 |  10.24 |   5.29 |   2.00 |   8.03 |
+Gameplayer                     | 7    |   5.57 |   5.00 |   6.32 |  11.71 |  12.00 |   5.99 |
+Xboxic                         | 7    |   5.43 |   4.00 |   6.40 |   7.71 |   5.00 |   8.70 |
+Game Positive                  | 7    |   1.14 |   1.00 |   0.90 |   7.00 |   7.00 |   4.61 |
+GamingWorld X                  | 7    |   2.57 |   2.00 |   3.55 |  11.57 |   9.00 |   9.73 |
+Detroit Free Press             | 7    |  12.43 |   6.00 |  18.08 |  18.57 |  15.00 |  23.77 |
+Warcry                         | 7    |   8.71 |   4.00 |  11.32 |   5.43 |   4.00 |   5.70 |
+Just RPG                       | 7    |   5.57 |   3.00 |   9.29 |  11.14 |   9.00 |   7.82 |
+Official Playstation 2 Magazi  | 7    |   5.57 |   5.00 |   5.68 |  10.43 |   9.00 |  13.41 |
+PlayUA                         | 6    |   3.67 |   3.50 |   4.08 |  18.83 |  17.00 |  12.61 |
+The Indie Informer             | 6    |   9.17 |  10.00 |   8.69 |  21.00 |  20.00 |  14.14 |
+Creative Bloq                  | 6    |  11.33 |   9.00 |  13.19 |  16.83 |  18.00 |   9.37 |
+FiringSquad                    | 6    |   2.00 |   1.00 |   2.97 |   8.00 |   4.50 |  11.31 |
+Computer Gaming World          | 6    |   8.00 |   7.00 |   6.69 |  10.50 |  12.00 |  12.30 |
+RewiredMind                    | 6    |   5.33 |   4.00 |   6.89 |   9.50 |   7.50 |   8.09 |
+Xbox Tavern                    | 6    |   9.50 |   8.50 |  11.27 |  15.83 |  16.50 |  10.03 |
+Launcher (The Washington Post  | 6    |   7.17 |   6.50 |   9.50 |  29.17 |  26.00 |  18.36 |
+GameByte                       | 6    |   6.67 |   6.50 |   8.14 |  21.33 |  16.00 |  17.82 |
+TouchArcade                    | 6    |   4.83 |   4.50 |   5.68 |  27.50 |  16.00 |  24.01 |
+Shindig                        | 6    |   5.50 |   4.00 |   5.32 |  27.83 |  21.00 |  28.01 |
+Toronto Sun                    | 6    |   6.50 |   5.50 |   7.94 |   8.83 |  10.50 |  10.46 |
+HellBored                      | 6    |   3.33 |   3.00 |   4.32 |   6.00 |   6.00 |   5.06 |
+GotNext                        | 6    |   7.17 |   5.00 |   6.40 |  13.33 |  12.50 |   3.39 |
+Ferrago                        | 6    |   4.33 |   4.50 |   4.27 |   6.00 |   3.50 |   6.83 |
+Xequted                        | 6    |   5.67 |   4.00 |   6.47 |   5.33 |   4.50 |   7.34 |
+KonsoliFIN                     | 5    |  10.40 |   5.00 |  14.25 |  17.60 |  14.00 |  11.70 |
+Saudi Gamer                    | 5    |   6.00 |   7.00 |   7.36 |  19.60 |  19.00 |  17.63 |
+The Outerhaven                 | 5    |  10.00 |  11.00 |   4.95 |  27.00 |  22.50 |  19.61 |
+Endless Mode                   | 5    |   5.40 |   4.00 |   8.08 |   7.75 |   6.00 |   8.26 |
+ScreenHub                      | 5    |  10.60 |   7.00 |  14.54 |  25.40 |  23.00 |  28.40 |
+FNintendo                      | 5    |   4.40 |   3.00 |   5.74 |   6.60 |   7.00 |   7.97 |
+Gamereactor Spain              | 5    |   5.20 |   6.00 |   5.68 |  11.80 |  12.00 |   7.29 |
+Adventure Game Hotspot         | 5    |   9.00 |   9.00 |  10.41 |  22.40 |  19.00 |  12.74 |
+ElDesmarque                    | 5    |   5.20 |   7.00 |   4.02 |  20.60 |  22.00 |  16.46 |
+Four Fat Chicks                | 5    |   6.20 |   6.00 |   6.94 |  13.20 |  10.00 |  12.28 |
+PC Format                      | 5    |   4.00 |   2.00 |   6.20 |   9.60 |   8.00 |   4.22 |
+Arcade Sushi                   | 5    |   4.20 |   3.00 |   5.32 |   7.20 |   9.00 |   6.50 |
+PC Zone UK                     | 5    |   4.00 |   2.00 |   4.18 |  15.40 |   8.00 |  21.97 |
+Variety                        | 5    |  11.20 |   6.00 |  12.82 |  21.80 |  18.00 |  24.35 |
+Playstation: The Official Mag  | 5    |   3.40 |   4.00 |   3.91 |   9.60 |  11.00 |   7.40 |
+Game Debate                    | 5    |   4.60 |   3.00 |   6.61 |  15.00 |  11.00 |  18.15 |
+Eurogamer Sweden               | 5    |   8.40 |   6.00 |  11.28 |  13.20 |  12.00 |  18.46 |
+Hyper Magazine                 | 5    |   8.40 |   7.00 |   9.96 |  10.80 |  12.00 |  11.28 |
+GameFront                      | 5    |   8.00 |   8.00 |  10.31 |  16.80 |  12.00 |  19.35 |
+Brash Games                    | 5    |   3.60 |   3.00 |   4.02 |  15.40 |  17.00 |  12.90 |
+Videogameszone.de              | 5    |   2.40 |   2.00 |   2.07 |   6.40 |   5.00 |   7.98 |
+Absolute Games                 | 5    |  10.80 |   7.00 |   7.53 |   8.20 |   5.00 |  11.76 |
+Gaming Maxx                    | 5    |   2.80 |   3.00 |   3.39 |  12.00 |   8.00 |  12.36 |
+Stuff                          | 5    |   5.40 |   5.00 |   6.06 |   9.40 |  11.00 |   5.59 |
+Weekly Famitsu                 | 5    |   6.00 |   4.00 |   6.76 |   8.20 |   7.00 |   3.90 |
+Playboy                        | 5    |   9.60 |   4.00 |  13.61 |  18.00 |   9.00 |  16.70 |
+GamerWeb Sony                  | 5    |   5.40 |   1.00 |   7.66 |  15.60 |  11.00 |  14.36 |
+Invader                        | 4    |   4.50 |   5.00 |   3.42 |  12.50 |  12.50 |  13.38 |
+Tech-Gaming                    | 4    |   2.00 |   1.50 |   2.45 |   8.75 |   9.00 |   4.50 |
+Omelete                        | 4    |   8.00 |   9.00 |   9.57 |   8.25 |   9.00 |   9.91 |
+Strategy Gamer                 | 4    |   9.75 |   9.00 |  14.84 |  24.25 |  16.50 |  20.07 |
+PCWorld                        | 4    |   3.75 |   2.00 |   6.08 |  15.00 |   6.00 |  22.99 |
+Nintendo Enthusiast            | 4    |   4.50 |   3.00 |   4.90 |   9.25 |  11.00 |   6.90 |
+UploadVR                       | 4    |  15.50 |   9.50 |  19.61 |   7.25 |   8.00 |   7.80 |
+Happy Puppy                    | 4    |   5.50 |   5.00 |   5.00 |   4.50 |   3.50 |   6.45 |
+Dealspwn                       | 4    |   7.75 |   7.50 |   7.63 |   9.25 |  10.00 |  11.79 |
+The So Videogames Podcast      | 4    |  12.50 |  13.00 |  16.55 |  17.25 |  12.00 |  19.03 |
+The Times                      | 4    |   6.00 |   4.50 |   6.86 |  19.00 |  13.50 |  20.54 |
+Android Central                | 4    |   3.50 |   3.00 |   4.24 |  19.50 |   9.50 |  23.13 |
+T3                             | 4    |  16.75 |  16.00 |  14.52 |  12.00 |  13.00 |  15.51 |
+CalmDownTom                    | 4    |  13.75 |  13.50 |  13.94 |  31.50 |  28.00 |  29.72 |
+IBTimes UK                     | 4    |   3.75 |   3.00 |   2.22 |  21.00 |  11.00 |  20.00 |
+My Nintendo News               | 4    |   3.50 |   3.50 |   3.70 |  12.75 |   7.00 |  16.58 |
+NowGamer                       | 4    |   9.75 |  11.00 |   4.79 |   6.50 |   6.50 |   5.45 |
+The Overpowered Noobs          | 4    |  13.50 |  13.00 |  14.05 |  22.50 |  17.00 |  33.71 |
+N-Europe                       | 4    |   2.75 |   2.50 |   3.30 |  20.00 |  10.50 |  26.01 |
+GamesNation                    | 4    |   1.50 |   1.50 |   1.83 |   5.75 |   6.00 |   1.50 |
+GamerWeb Nintendo              | 4    |   1.25 |   1.50 |   1.71 |   5.25 |   6.50 |   3.59 |
+Firing Squad                   | 4    |   8.50 |   3.50 |  12.36 |  10.25 |   9.00 |  12.69 |
+n-Revolution Magazine UK       | 4    |   5.75 |   1.50 |   9.60 |  35.50 |  40.00 |  46.23 |
+GameCube Europe                | 4    |   3.00 |   1.50 |   4.83 |   5.00 |   5.00 |   1.83 |
+N-Insanity                     | 4    |   3.00 |   2.50 |   3.32 |   7.25 |   7.50 |   3.30 |
+XenGamers                      | 4    |   4.25 |   4.50 |   5.19 |  15.75 |  15.00 |  22.04 |
+VideoGamesLife                 | 4    |   5.75 |   5.50 |   6.60 |   7.00 |   7.00 |   9.59 |
+Media and Games Online Networ  | 4    |  11.50 |   5.00 |  17.26 |  18.00 |  14.50 |  18.01 |
+Toisto                         | 3    |  20.33 |  20.00 |  25.24 |  29.00 |  32.00 |  31.19 |
+IGN Turkey                     | 3    |   9.67 |   6.00 |   8.14 |  21.00 |  24.00 |  19.76 |
+Adventure Gamers               | 3    |   7.00 |   5.00 |   9.54 |  27.00 |   9.00 |  42.00 |
+The Indie Game Website         | 3    |   2.00 |   1.00 |   1.73 |   3.33 |   3.00 |   4.04 |
+Hot Games                      | 3    |   6.00 |   6.00 |   2.00 |  11.67 |  11.00 |   2.08 |
+Gamers Depot                   | 3    |  10.00 |   4.00 |  15.01 |  16.00 |  11.00 |  21.96 |
+Metro Montreal                 | 3    |   6.33 |   7.00 |   3.06 |  17.67 |   6.00 |  28.22 |
+Starbit                        | 3    |   5.00 |   4.00 |   5.69 |  19.67 |  12.00 |  22.50 |
+9Lives                         | 3    |   2.00 |   1.00 |   1.73 |   4.67 |   5.00 |   1.53 |
+Modojo                         | 3    |   5.67 |   6.00 |   7.37 |  18.67 |   6.00 |  22.81 |
+YouGamers                      | 3    |   5.33 |   3.00 |   7.77 |   8.00 |   8.00 |   8.02 |
+Zentendo                       | 3    |   4.00 |   3.00 |   4.51 |  24.67 |   9.00 |  28.01 |
+Australian GamePro             | 3    |   5.67 |   4.00 |   2.89 |   9.00 |   9.00 |   2.00 |
+Xbox Evolved                   | 3    |   3.00 |   3.00 |   2.00 |  11.67 |  12.00 |   1.53 |
+Xbox Solution                  | 3    |   1.33 |   1.00 |   0.58 |  10.00 |  10.00 |   0.00 |
+Retcon                         | 2    |   7.00 |   7.00 |   2.83 |   7.00 |   7.00 |   9.90 |
+Let's Play Video Games         | 2    |   7.00 |   7.00 |   5.66 |  11.50 |  11.50 |   0.71 |
+Road to VR                     | 2    |   5.50 |   5.50 |   7.78 |   8.00 |   8.00 |  11.31 |
+GamerWeb PC                    | 2    |   2.00 |   2.00 |   1.41 |   4.00 |   4.00 |   1.41 |
+The Independent                | 2    |   7.50 |   7.50 |  10.61 |   9.50 |   9.50 |  12.02 |
+The Globe and Mail (Toronto)   | 2    |   4.00 |   4.00 |   1.41 |   2.00 |   2.00 |   2.83 |
+PC Master (Greece)             | 2    |   7.00 |   7.00 |   9.90 |  20.50 |  20.50 |  20.51 |
+Time                           | 2    |   5.00 |   5.00 |   2.83 |  15.00 |  15.00 |   5.66 |
+Gameplayer Sweden              | 2    |   6.00 |   6.00 |   0.00 |   1.00 |   1.00 |   0.00 |
+PSNStores                      | 2    |  10.00 |  10.00 |   1.41 |  10.50 |  10.50 |  14.85 |
+GamerWeb Xbox                  | 2    |   6.00 |   6.00 |   8.49 |   1.50 |   1.50 |   0.71 |
+The Wiire                      | 2    |   4.00 |   4.00 |   1.41 |  10.00 |  10.00 |   1.41 |
+FHM                            | 2    |   4.50 |   4.50 |   0.71 |  12.00 |  12.00 |   2.83 |
+Village Voice                  | 2    |   4.50 |   4.50 |   2.12 |   6.50 |   6.50 |   9.19 |
+GameReviewer                   | 2    |  12.50 |  12.50 |   7.78 |   6.00 |   6.00 |   7.07 |
+GBA Central                    | 2    |   6.50 |   6.50 |   9.19 |  14.50 |  14.50 |   4.95 |
+Pocket Games                   | 2    |   8.00 |   8.00 |  11.31 |  16.50 |  16.50 |  23.33 |
+Sports Gaming Network          | 2    |   2.00 |   2.00 |   1.41 |  21.50 |  21.50 |  12.02 |
+GamePen                        | 2    |   8.50 |   8.50 |   4.95 |  17.50 |  17.50 |  24.75 |
+Play (Poland)                  | 2    |   7.00 |   7.00 |   9.90 |   2.50 |   2.50 |   3.54 |
+GamePower                      | 1    |   5.00 |   5.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+CheckOut                       | 1    |   5.00 |   5.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+Daily Radar                    | 1    |   5.00 |   5.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+Quandary                       | 1    |   5.00 |   5.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+Antagonist                     | 1    |   3.00 |   3.00 |   0.00 |   7.00 |   7.00 |   0.00 |
+CNET Gamecenter                | 1    |   5.00 |   5.00 |   0.00 |   1.00 |   1.00 |   0.00 |
+Spank!                         | 1    |   5.00 |   5.00 |   0.00 |   1.00 |   1.00 |   0.00 |
+IndieWire                      | 1    |  13.00 |  13.00 |   0.00 |  10.00 |  10.00 |   0.00 |
+Glixel                         | 1    |  17.00 |  17.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+Official PlayStation Magazine  | 1    |   5.00 |   5.00 |   0.00 |   2.00 |   2.00 |   0.00 |
+Gamezebo                       | 1    |   4.00 |   4.00 |   0.00 |   2.00 |   2.00 |   0.00 |
+GMW3                           | 1    |   7.00 |   7.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+Wired UK                       | 1    |   3.00 |   3.00 |   0.00 |  11.00 |  11.00 |   0.00 |
+PS3bloggen.se                  | 1    |   4.00 |   4.00 |   0.00 |  11.00 |  11.00 |   0.00 |
+PSFocus                        | 1    |   1.00 |   1.00 |   0.00 |   8.00 |   8.00 |   0.00 |
+Ten Ton Hammer                 | 1    |   3.00 |   3.00 |   0.00 |   7.00 |   7.00 |   0.00 |
+High-Def Digest                | 1    |   2.00 |   2.00 |   0.00 |  17.00 |  17.00 |   0.00 |
+Examiner                       | 1    |   2.00 |   2.00 |   0.00 |  17.00 |  17.00 |   0.00 |
+ICXM                           | 1    |   8.00 |   8.00 |   0.00 |  24.00 |  24.00 |   0.00 |
+Games Domain                   | 1    |   8.00 |   8.00 |   0.00 |  10.00 |  10.00 |   0.00 |
+Nintendorks                    | 1    |   2.00 |   2.00 |   0.00 |   0.00 |   0.00 |   0.00 |
+Bit-Gamer                      | 1    |   1.00 |   1.00 |   0.00 |  13.00 |  13.00 |   0.00 |
+PC Games (Russia)              | 1    |   1.00 |   1.00 |   0.00 |  13.00 |  13.00 |   0.00 |
+Frictionless Insight           | 1    |   4.00 |   4.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+VIA Gamers Arena               | 1    |   2.00 |   2.00 |   0.00 |   7.00 |   7.00 |   0.00 |
+Absolute Playstation           | 1    |   0.00 |   0.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+Loaded Inc                     | 1    |   7.00 |   7.00 |   0.00 |   1.00 |   1.00 |   0.00 |
+BBC Sport                      | 1    |   8.00 |   8.00 |   0.00 |  20.00 |  20.00 |   0.00 |
+DS Central                     | 1    |  12.00 |  12.00 |   0.00 |  14.00 |  14.00 |   0.00 |
+Cloudchaser                    | 1    |   7.00 |   7.00 |   0.00 |  25.00 |  25.00 |   0.00 |
+Cheat Code Central Platinum    | 1    |   5.00 |   5.00 |   0.00 |  19.00 |  19.00 |   0.00 |
+AltGaming                      | 1    |   1.00 |   1.00 |   0.00 |   3.00 |   3.00 |   0.00 |
+PSW Magazine UK                | 1    |   4.00 |   4.00 |   0.00 |   3.00 |   3.00 |   0.00 |
+Pregaming                      | 1    |   8.00 |   8.00 |   0.00 |   8.00 |   8.00 |   0.00 |
+PSM2 Magazine UK               | 1    |   5.00 |   5.00 |   0.00 |  11.00 |  11.00 |   0.00 |
+Pure Magazine UK               | 1    |   7.00 |   7.00 |   0.00 |   9.00 |   9.00 |   0.00 |
+Operation Sports               | 1    |   4.00 |   4.00 |   0.00 |  86.00 |  86.00 |   0.00 |
+GameCube Advanced              | 1    |  16.00 |  16.00 |   0.00 |  16.00 |  16.00 |   0.00 |
+Pelaaja (Finland)              | 1    |  14.00 |  14.00 |   0.00 |  14.00 |  14.00 |   0.00 |
+> 'IGN' (most reviewed) differs from player scores by 17.4 points on average. The typical difference (median) is 12.0 points, with a consistency measure (SD) of 19.8.
+
+✓ Detailed stats saved to CSV: results_2025-11-22.csv
+
+Process finished with exit code 0
